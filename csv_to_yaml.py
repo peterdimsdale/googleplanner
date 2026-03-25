@@ -22,6 +22,8 @@ Usage:
     python3 csv_to_yaml.py tasks.csv -o project.yaml
 """
 
+from __future__ import annotations
+
 import argparse
 import csv
 import sys
