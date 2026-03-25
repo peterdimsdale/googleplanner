@@ -68,7 +68,7 @@ def generate_report(project_data: dict, result: dict) -> str:
 
     # X-axis labels every 5 working days
     week_labels = [
-        {"offset": d, "label": working_days_to_date(start_date, d).strftime("%-d %b")}
+        {"offset": d, "label": f"{working_days_to_date(start_date, d).day} {working_days_to_date(start_date, d).strftime('%b')}"}
         for d in range(0, makespan + 1, 5)
     ]
 
