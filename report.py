@@ -29,7 +29,7 @@ def working_days_to_date(start: date, offset: int) -> date:
 
 
 def _fmt(d: date) -> str:
-    return d.strftime("%-d %b %Y")
+    return f"{d.day} {d.strftime('%b %Y')}"
 
 
 def generate_report(project_data: dict, result: dict) -> str:

@@ -166,209 +166,6565 @@ tbody tr:hover td { background: var(--surface2); }
   "project": {
     "name": "Pension Calc Development",
     "start_date": "25 Mar 2026",
-    "end_date": "27 Apr 2026",
-    "makespan": 23,
-    "status": "OPTIMAL"
+    "end_date": "10 Feb 2028",
+    "makespan": 491,
+    "status": "FEASIBLE"
   },
   "people": [
-    "Developer 1",
-    "Developer 2",
-    "Tester",
-    "UAT Resource"
+    "Senior Analyst 3",
+    "Senior Analyst 2",
+    "Senior Analyst 1",
+    "Senior Coder 1",
+    "Senior Coder 3",
+    "Senior Coder 2",
+    "Analyst 1",
+    "UAT Resource1",
+    "UAT Resource2"
   ],
   "tasks": [
     {
-      "id": "schemeabc_spec",
-      "name": "SchemeABC - Spec Review",
-      "scheme": "SchemeABC",
+      "id": "PSLLloydsRegister_Specs",
+      "name": "PSLLloydsRegister - Specs",
+      "scheme": "PSLLloydsRegister",
       "type": "spec",
-      "base_duration": 3,
-      "duration": 3,
+      "base_duration": 5,
+      "duration": 10,
       "start": 0,
-      "end": 3,
-      "assigned_to": "Developer 1",
+      "end": 10,
+      "assigned_to": "Senior Analyst 3",
       "depends_on": [],
       "start_date": "25 Mar 2026",
-      "end_date": "30 Mar 2026",
+      "end_date": "8 Apr 2026",
       "color": "#4A9FD9"
     },
     {
-      "id": "schemeabc_gmp_revaluation",
-      "name": "SchemeABC - GMP Revaluation",
-      "scheme": "SchemeABC",
-      "type": "calc_coding",
-      "base_duration": 8,
-      "duration": 8,
-      "start": 3,
-      "end": 11,
-      "assigned_to": "Developer 2",
-      "depends_on": [
-        "schemeabc_spec"
-      ],
-      "start_date": "30 Mar 2026",
-      "end_date": "9 Apr 2026",
-      "color": "#4A9FD9"
-    },
-    {
-      "id": "schemedef_spec",
-      "name": "SchemeDEF - Spec Review",
-      "scheme": "SchemeDEF",
+      "id": "PSLRAC_Specs",
+      "name": "PSLRAC - Specs",
+      "scheme": "PSLRAC",
       "type": "spec",
-      "base_duration": 2,
-      "duration": 2,
-      "start": 3,
+      "base_duration": 5,
+      "duration": 5,
+      "start": 0,
       "end": 5,
-      "assigned_to": "Developer 1",
+      "assigned_to": "Senior Analyst 2",
       "depends_on": [],
-      "start_date": "30 Mar 2026",
+      "start_date": "25 Mar 2026",
       "end_date": "1 Apr 2026",
       "color": "#9C27B0"
     },
     {
-      "id": "schemedef_cetv_calc",
-      "name": "SchemeDEF - CETV Calc",
-      "scheme": "SchemeDEF",
-      "type": "calc_coding",
-      "base_duration": 6,
-      "duration": 6,
-      "start": 5,
-      "end": 11,
-      "assigned_to": "Developer 1",
-      "depends_on": [
-        "schemedef_spec"
-      ],
-      "start_date": "1 Apr 2026",
-      "end_date": "9 Apr 2026",
-      "color": "#9C27B0"
-    },
-    {
-      "id": "schemeabc_retirement_calc",
-      "name": "SchemeABC - Retirement Calc",
-      "scheme": "SchemeABC",
-      "type": "calc_coding",
+      "id": "XPSITW_Specs",
+      "name": "XPSITW - Specs",
+      "scheme": "XPSITW",
+      "type": "spec",
       "base_duration": 5,
       "duration": 5,
-      "start": 11,
-      "end": 16,
-      "assigned_to": "Developer 2",
-      "depends_on": [
-        "schemeabc_spec"
-      ],
-      "start_date": "9 Apr 2026",
-      "end_date": "16 Apr 2026",
-      "color": "#4A9FD9"
+      "start": 0,
+      "end": 5,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "25 Mar 2026",
+      "end_date": "1 Apr 2026",
+      "color": "#4CAF50"
     },
     {
-      "id": "schemeabc_transfer_value_calc",
-      "name": "SchemeABC - Transfer Value Calc",
-      "scheme": "SchemeABC",
+      "id": "BAA_Specs",
+      "name": "BAA - Specs",
+      "scheme": "BAA",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 5,
+      "end": 10,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "1 Apr 2026",
+      "end_date": "8 Apr 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "CPL_Specs",
+      "name": "CPL - Specs",
+      "scheme": "CPL",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 5,
+      "end": 10,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "1 Apr 2026",
+      "end_date": "8 Apr 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "PSLRAC_Coding",
+      "name": "PSLRAC - Coding",
+      "scheme": "PSLRAC",
       "type": "calc_coding",
-      "base_duration": 3,
-      "duration": 3,
-      "start": 11,
-      "end": 14,
-      "assigned_to": "Developer 1",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 5,
+      "end": 15,
+      "assigned_to": "Senior Coder 1",
       "depends_on": [
-        "schemeabc_spec"
+        "PSLRAC_Specs"
       ],
-      "start_date": "9 Apr 2026",
-      "end_date": "14 Apr 2026",
-      "color": "#4A9FD9"
-    },
-    {
-      "id": "schemedef_test",
-      "name": "SchemeDEF - Testing",
-      "scheme": "SchemeDEF",
-      "type": "testing",
-      "base_duration": 3,
-      "duration": 3,
-      "start": 11,
-      "end": 14,
-      "assigned_to": "Tester",
-      "depends_on": [
-        "schemedef_cetv_calc"
-      ],
-      "start_date": "9 Apr 2026",
-      "end_date": "14 Apr 2026",
+      "start_date": "1 Apr 2026",
+      "end_date": "15 Apr 2026",
       "color": "#9C27B0"
     },
     {
-      "id": "schemedef_uat",
-      "name": "SchemeDEF - UAT",
-      "scheme": "SchemeDEF",
-      "type": "uat",
-      "base_duration": 2,
-      "duration": 4,
-      "start": 14,
-      "end": 18,
-      "assigned_to": "UAT Resource",
+      "id": "XPSITW_Coding",
+      "name": "XPSITW - Coding",
+      "scheme": "XPSITW",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 5,
+      "end": 15,
+      "assigned_to": "Senior Coder 3",
       "depends_on": [
-        "schemedef_test"
+        "XPSITW_Specs"
       ],
-      "start_date": "14 Apr 2026",
+      "start_date": "1 Apr 2026",
+      "end_date": "15 Apr 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "CPL_Coding",
+      "name": "CPL - Coding",
+      "scheme": "CPL",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 10,
+      "end": 20,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "CPL_Specs"
+      ],
+      "start_date": "8 Apr 2026",
+      "end_date": "22 Apr 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "CreditAgricole_Specs",
+      "name": "CreditAgricole - Specs",
+      "scheme": "CreditAgricole",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 10,
+      "end": 15,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "8 Apr 2026",
+      "end_date": "15 Apr 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLICRNew_Specs",
+      "name": "PSLICRNew - Specs",
+      "scheme": "PSLICRNew",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 10,
+      "end": 15,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "8 Apr 2026",
+      "end_date": "15 Apr 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Kenwood_Specs",
+      "name": "Kenwood - Specs",
+      "scheme": "Kenwood",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 15,
+      "end": 20,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "15 Apr 2026",
+      "end_date": "22 Apr 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLAECOMScottWilson_Specs",
+      "name": "PSLAECOMScottWilson - Specs",
+      "scheme": "PSLAECOMScottWilson",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 15,
+      "end": 20,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "15 Apr 2026",
+      "end_date": "22 Apr 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLICRNew_Coding",
+      "name": "PSLICRNew - Coding",
+      "scheme": "PSLICRNew",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 15,
+      "end": 25,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "PSLICRNew_Specs"
+      ],
+      "start_date": "15 Apr 2026",
+      "end_date": "29 Apr 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLLloydsRegister_Coding",
+      "name": "PSLLloydsRegister - Coding",
+      "scheme": "PSLLloydsRegister",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 15,
+      "end": 25,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "PSLLloydsRegister_Specs"
+      ],
+      "start_date": "15 Apr 2026",
+      "end_date": "29 Apr 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLRAC_Testing",
+      "name": "PSLRAC - Coding",
+      "scheme": "PSLRAC",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 15,
+      "end": 18,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLRAC_Coding"
+      ],
+      "start_date": "15 Apr 2026",
       "end_date": "20 Apr 2026",
       "color": "#9C27B0"
     },
     {
-      "id": "schemeabc_test",
-      "name": "SchemeABC - Testing",
-      "scheme": "SchemeABC",
-      "type": "testing",
+      "id": "PSLRAC_UAT",
+      "name": "PSLRAC - Coding",
+      "scheme": "PSLRAC",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 18,
+      "end": 28,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLRAC_Testing"
+      ],
+      "start_date": "20 Apr 2026",
+      "end_date": "4 May 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "XPSITW_Testing",
+      "name": "XPSITW - Coding",
+      "scheme": "XPSITW",
+      "type": "calc_coding",
       "base_duration": 3,
       "duration": 3,
-      "start": 16,
-      "end": 19,
-      "assigned_to": "Tester",
+      "start": 18,
+      "end": 21,
+      "assigned_to": "Analyst 1",
       "depends_on": [
-        "schemeabc_transfer_value_calc",
-        "schemeabc_retirement_calc",
-        "schemeabc_gmp_revaluation"
+        "XPSITW_Coding"
       ],
-      "start_date": "16 Apr 2026",
-      "end_date": "21 Apr 2026",
+      "start_date": "20 Apr 2026",
+      "end_date": "23 Apr 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "PSLAECOMScottWilson_Coding",
+      "name": "PSLAECOMScottWilson - Coding",
+      "scheme": "PSLAECOMScottWilson",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 20,
+      "end": 30,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "PSLAECOMScottWilson_Specs"
+      ],
+      "start_date": "22 Apr 2026",
+      "end_date": "6 May 2026",
       "color": "#4A9FD9"
     },
     {
-      "id": "schemeabc_uat",
-      "name": "SchemeABC - UAT",
-      "scheme": "SchemeABC",
-      "type": "uat",
-      "base_duration": 2,
-      "duration": 4,
-      "start": 19,
-      "end": 23,
-      "assigned_to": "UAT Resource",
+      "id": "Vector_Specs",
+      "name": "Vector - Specs",
+      "scheme": "Vector",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 20,
+      "end": 25,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "22 Apr 2026",
+      "end_date": "29 Apr 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "XPSWPA_Specs",
+      "name": "XPSWPA - Specs",
+      "scheme": "XPSWPA",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 20,
+      "end": 25,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "22 Apr 2026",
+      "end_date": "29 Apr 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "XPSITW_UAT",
+      "name": "XPSITW - Coding",
+      "scheme": "XPSITW",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 21,
+      "end": 31,
+      "assigned_to": "UAT Resource2",
       "depends_on": [
-        "schemeabc_test"
+        "XPSITW_Testing"
       ],
-      "start_date": "21 Apr 2026",
-      "end_date": "27 Apr 2026",
+      "start_date": "23 Apr 2026",
+      "end_date": "7 May 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "CNH_Specs",
+      "name": "CNH - Specs",
+      "scheme": "CNH",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 25,
+      "end": 30,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "29 Apr 2026",
+      "end_date": "6 May 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLLloydsRegister_Testing",
+      "name": "PSLLloydsRegister - Coding",
+      "scheme": "PSLLloydsRegister",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 25,
+      "end": 28,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLLloydsRegister_Coding"
+      ],
+      "start_date": "29 Apr 2026",
+      "end_date": "4 May 2026",
       "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLParkerHannifin_Specs",
+      "name": "PSLParkerHannifin - Specs",
+      "scheme": "PSLParkerHannifin",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 25,
+      "end": 30,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "29 Apr 2026",
+      "end_date": "6 May 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "Vector_Coding",
+      "name": "Vector - Coding",
+      "scheme": "Vector",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 25,
+      "end": 35,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "Vector_Specs"
+      ],
+      "start_date": "29 Apr 2026",
+      "end_date": "13 May 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "PSLICRNew_Testing",
+      "name": "PSLICRNew - Coding",
+      "scheme": "PSLICRNew",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 28,
+      "end": 31,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLICRNew_Coding"
+      ],
+      "start_date": "4 May 2026",
+      "end_date": "7 May 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLLloydsRegister_UAT",
+      "name": "PSLLloydsRegister - Coding",
+      "scheme": "PSLLloydsRegister",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 28,
+      "end": 38,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLLloydsRegister_Testing"
+      ],
+      "start_date": "4 May 2026",
+      "end_date": "18 May 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "CNH_Coding",
+      "name": "CNH - Coding",
+      "scheme": "CNH",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 30,
+      "end": 40,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "CNH_Specs"
+      ],
+      "start_date": "6 May 2026",
+      "end_date": "20 May 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "EGL_Specs",
+      "name": "EGL - Specs",
+      "scheme": "EGL",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 30,
+      "end": 35,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "6 May 2026",
+      "end_date": "13 May 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "TTLChiltern_Specs",
+      "name": "TTLChiltern - Specs",
+      "scheme": "TTLChiltern",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 30,
+      "end": 35,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "6 May 2026",
+      "end_date": "13 May 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLAECOMScottWilson_Testing",
+      "name": "PSLAECOMScottWilson - Coding",
+      "scheme": "PSLAECOMScottWilson",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 31,
+      "end": 34,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLAECOMScottWilson_Coding"
+      ],
+      "start_date": "7 May 2026",
+      "end_date": "12 May 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLICRNew_UAT",
+      "name": "PSLICRNew - Coding",
+      "scheme": "PSLICRNew",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 31,
+      "end": 41,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "PSLICRNew_Testing"
+      ],
+      "start_date": "7 May 2026",
+      "end_date": "21 May 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLAfton_Specs",
+      "name": "PSLAfton - Specs",
+      "scheme": "PSLAfton",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 35,
+      "end": 40,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "13 May 2026",
+      "end_date": "20 May 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLParkerHannifin_Coding",
+      "name": "PSLParkerHannifin - Coding",
+      "scheme": "PSLParkerHannifin",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 35,
+      "end": 45,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "PSLParkerHannifin_Specs"
+      ],
+      "start_date": "13 May 2026",
+      "end_date": "27 May 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "TTLChiltern_Coding",
+      "name": "TTLChiltern - Coding",
+      "scheme": "TTLChiltern",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 35,
+      "end": 45,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "TTLChiltern_Specs"
+      ],
+      "start_date": "13 May 2026",
+      "end_date": "27 May 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Vector_Testing",
+      "name": "Vector - Coding",
+      "scheme": "Vector",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 35,
+      "end": 38,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Vector_Coding"
+      ],
+      "start_date": "13 May 2026",
+      "end_date": "18 May 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "XPSMouchelBusiness_Specs",
+      "name": "XPSMouchelBusiness - Specs",
+      "scheme": "XPSMouchelBusiness",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 35,
+      "end": 40,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "13 May 2026",
+      "end_date": "20 May 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLAECOMScottWilson_UAT",
+      "name": "PSLAECOMScottWilson - Coding",
+      "scheme": "PSLAECOMScottWilson",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 38,
+      "end": 48,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLAECOMScottWilson_Testing"
+      ],
+      "start_date": "18 May 2026",
+      "end_date": "1 Jun 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "CNH_Testing",
+      "name": "CNH - Coding",
+      "scheme": "CNH",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 40,
+      "end": 43,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "CNH_Coding"
+      ],
+      "start_date": "20 May 2026",
+      "end_date": "25 May 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "CreditAgricole_Coding",
+      "name": "CreditAgricole - Coding",
+      "scheme": "CreditAgricole",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 40,
+      "end": 50,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "CreditAgricole_Specs"
+      ],
+      "start_date": "20 May 2026",
+      "end_date": "3 Jun 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLNTL_1999_Specs",
+      "name": "PSLNTL_1999 - Specs",
+      "scheme": "PSLNTL_1999",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 40,
+      "end": 45,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "20 May 2026",
+      "end_date": "27 May 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Sandberg_Specs",
+      "name": "Sandberg - Specs",
+      "scheme": "Sandberg",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 40,
+      "end": 45,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "20 May 2026",
+      "end_date": "27 May 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Vector_UAT",
+      "name": "Vector - Coding",
+      "scheme": "Vector",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 41,
+      "end": 51,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Vector_Testing"
+      ],
+      "start_date": "21 May 2026",
+      "end_date": "4 Jun 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "EGL_Coding",
+      "name": "EGL - Coding",
+      "scheme": "EGL",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 45,
+      "end": 55,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "EGL_Specs"
+      ],
+      "start_date": "27 May 2026",
+      "end_date": "10 Jun 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "MouchelSPS_Specs",
+      "name": "MouchelSPS - Specs",
+      "scheme": "MouchelSPS",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 45,
+      "end": 50,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "27 May 2026",
+      "end_date": "3 Jun 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLParkerHannifin_Testing",
+      "name": "PSLParkerHannifin - Coding",
+      "scheme": "PSLParkerHannifin",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 45,
+      "end": 48,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLParkerHannifin_Coding"
+      ],
+      "start_date": "27 May 2026",
+      "end_date": "1 Jun 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "Rexel_Specs",
+      "name": "Rexel - Specs",
+      "scheme": "Rexel",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 45,
+      "end": 50,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "27 May 2026",
+      "end_date": "3 Jun 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "XPSMouchelBusiness_Coding",
+      "name": "XPSMouchelBusiness - Coding",
+      "scheme": "XPSMouchelBusiness",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 45,
+      "end": 55,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "XPSMouchelBusiness_Specs"
+      ],
+      "start_date": "27 May 2026",
+      "end_date": "10 Jun 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLParkerHannifin_UAT",
+      "name": "PSLParkerHannifin - Coding",
+      "scheme": "PSLParkerHannifin",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 48,
+      "end": 58,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLParkerHannifin_Testing"
+      ],
+      "start_date": "1 Jun 2026",
+      "end_date": "15 Jun 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "TTLChiltern_Testing",
+      "name": "TTLChiltern - Coding",
+      "scheme": "TTLChiltern",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 48,
+      "end": 51,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "TTLChiltern_Coding"
+      ],
+      "start_date": "1 Jun 2026",
+      "end_date": "4 Jun 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Rexel_Coding",
+      "name": "Rexel - Coding",
+      "scheme": "Rexel",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 50,
+      "end": 60,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "Rexel_Specs"
+      ],
+      "start_date": "3 Jun 2026",
+      "end_date": "17 Jun 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "Statoil_Specs",
+      "name": "Statoil - Specs",
+      "scheme": "Statoil",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 50,
+      "end": 55,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "3 Jun 2026",
+      "end_date": "10 Jun 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "XPSNuffield_Specs",
+      "name": "XPSNuffield - Specs",
+      "scheme": "XPSNuffield",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 50,
+      "end": 55,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "3 Jun 2026",
+      "end_date": "10 Jun 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "CNH_UAT",
+      "name": "CNH - Coding",
+      "scheme": "CNH",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 51,
+      "end": 61,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "CNH_Testing"
+      ],
+      "start_date": "4 Jun 2026",
+      "end_date": "18 Jun 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "CreditAgricole_Testing",
+      "name": "CreditAgricole - Coding",
+      "scheme": "CreditAgricole",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 51,
+      "end": 54,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "CreditAgricole_Coding"
+      ],
+      "start_date": "4 Jun 2026",
+      "end_date": "9 Jun 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "EGL_Testing",
+      "name": "EGL - Coding",
+      "scheme": "EGL",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 55,
+      "end": 58,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "EGL_Coding"
+      ],
+      "start_date": "10 Jun 2026",
+      "end_date": "15 Jun 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "JohnGrooms_Specs",
+      "name": "JohnGrooms - Specs",
+      "scheme": "JohnGrooms",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 55,
+      "end": 60,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "10 Jun 2026",
+      "end_date": "17 Jun 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLAfton_Coding",
+      "name": "PSLAfton - Coding",
+      "scheme": "PSLAfton",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 55,
+      "end": 65,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "PSLAfton_Specs"
+      ],
+      "start_date": "10 Jun 2026",
+      "end_date": "24 Jun 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLCBHillierParker_Specs",
+      "name": "PSLCBHillierParker - Specs",
+      "scheme": "PSLCBHillierParker",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 55,
+      "end": 60,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "10 Jun 2026",
+      "end_date": "17 Jun 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "Statoil_Coding",
+      "name": "Statoil - Coding",
+      "scheme": "Statoil",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 55,
+      "end": 65,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "Statoil_Specs"
+      ],
+      "start_date": "10 Jun 2026",
+      "end_date": "24 Jun 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "XPSMouchelBusiness_Testing",
+      "name": "XPSMouchelBusiness - Coding",
+      "scheme": "XPSMouchelBusiness",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 58,
+      "end": 61,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "XPSMouchelBusiness_Coding"
+      ],
+      "start_date": "15 Jun 2026",
+      "end_date": "18 Jun 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "XPSJPS2022_Specs",
+      "name": "XPSJPS2022 - Specs",
+      "scheme": "XPSJPS2022",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 60,
+      "end": 65,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "17 Jun 2026",
+      "end_date": "24 Jun 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "XPSPennon_Specs",
+      "name": "XPSPennon - Specs",
+      "scheme": "XPSPennon",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 60,
+      "end": 65,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "17 Jun 2026",
+      "end_date": "24 Jun 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Rexel_Testing",
+      "name": "Rexel - Coding",
+      "scheme": "Rexel",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 61,
+      "end": 64,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Rexel_Coding"
+      ],
+      "start_date": "18 Jun 2026",
+      "end_date": "23 Jun 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "TTLChiltern_UAT",
+      "name": "TTLChiltern - Coding",
+      "scheme": "TTLChiltern",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 61,
+      "end": 71,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "TTLChiltern_Testing"
+      ],
+      "start_date": "18 Jun 2026",
+      "end_date": "2 Jul 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "XPSMouchelBusiness_UAT",
+      "name": "XPSMouchelBusiness - Coding",
+      "scheme": "XPSMouchelBusiness",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 61,
+      "end": 71,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "XPSMouchelBusiness_Testing"
+      ],
+      "start_date": "18 Jun 2026",
+      "end_date": "2 Jul 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "AuditCommission_Specs",
+      "name": "AuditCommission - Specs",
+      "scheme": "AuditCommission",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 65,
+      "end": 70,
+      "assigned_to": "Senior Analyst 2",
+      "depends_on": [],
+      "start_date": "24 Jun 2026",
+      "end_date": "1 Jul 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "EvonikEPS_Specs",
+      "name": "EvonikEPS - Specs",
+      "scheme": "EvonikEPS",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 65,
+      "end": 70,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "24 Jun 2026",
+      "end_date": "1 Jul 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "PSLAfton_Testing",
+      "name": "PSLAfton - Coding",
+      "scheme": "PSLAfton",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 65,
+      "end": 68,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLAfton_Coding"
+      ],
+      "start_date": "24 Jun 2026",
+      "end_date": "29 Jun 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLNTL_1999_Coding",
+      "name": "PSLNTL_1999 - Coding",
+      "scheme": "PSLNTL_1999",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 65,
+      "end": 75,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "PSLNTL_1999_Specs"
+      ],
+      "start_date": "24 Jun 2026",
+      "end_date": "8 Jul 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Sandberg_Coding",
+      "name": "Sandberg - Coding",
+      "scheme": "Sandberg",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 65,
+      "end": 75,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "Sandberg_Specs"
+      ],
+      "start_date": "24 Jun 2026",
+      "end_date": "8 Jul 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "XPSJPS2022_Coding",
+      "name": "XPSJPS2022 - Coding",
+      "scheme": "XPSJPS2022",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 65,
+      "end": 75,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "XPSJPS2022_Specs"
+      ],
+      "start_date": "24 Jun 2026",
+      "end_date": "8 Jul 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Statoil_Testing",
+      "name": "Statoil - Coding",
+      "scheme": "Statoil",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 68,
+      "end": 71,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Statoil_Coding"
+      ],
+      "start_date": "29 Jun 2026",
+      "end_date": "2 Jul 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "Headlam Group_Specs",
+      "name": "Headlam Group - Specs",
+      "scheme": "Headlam Group",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 70,
+      "end": 75,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "1 Jul 2026",
+      "end_date": "8 Jul 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "CreditAgricole_UAT",
+      "name": "CreditAgricole - Coding",
+      "scheme": "CreditAgricole",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 71,
+      "end": 81,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "CreditAgricole_Testing"
+      ],
+      "start_date": "2 Jul 2026",
+      "end_date": "16 Jul 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "Statoil_UAT",
+      "name": "Statoil - Coding",
+      "scheme": "Statoil",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 71,
+      "end": 81,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Statoil_Testing"
+      ],
+      "start_date": "2 Jul 2026",
+      "end_date": "16 Jul 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "Headlam Group_Coding",
+      "name": "Headlam Group - Coding",
+      "scheme": "Headlam Group",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 75,
+      "end": 85,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "Headlam Group_Specs"
+      ],
+      "start_date": "8 Jul 2026",
+      "end_date": "22 Jul 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "Sandberg_Testing",
+      "name": "Sandberg - Coding",
+      "scheme": "Sandberg",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 75,
+      "end": 78,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Sandberg_Coding"
+      ],
+      "start_date": "8 Jul 2026",
+      "end_date": "13 Jul 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Threei_Specs",
+      "name": "Threei - Specs",
+      "scheme": "Threei",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 75,
+      "end": 80,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "8 Jul 2026",
+      "end_date": "15 Jul 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "XPSPennon_Coding",
+      "name": "XPSPennon - Coding",
+      "scheme": "XPSPennon",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 75,
+      "end": 85,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "XPSPennon_Specs"
+      ],
+      "start_date": "8 Jul 2026",
+      "end_date": "22 Jul 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "XPSWPA_Coding",
+      "name": "XPSWPA - Coding",
+      "scheme": "XPSWPA",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 75,
+      "end": 85,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "XPSWPA_Specs"
+      ],
+      "start_date": "8 Jul 2026",
+      "end_date": "22 Jul 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "XPSJPS2022_Testing",
+      "name": "XPSJPS2022 - Coding",
+      "scheme": "XPSJPS2022",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 78,
+      "end": 81,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "XPSJPS2022_Coding"
+      ],
+      "start_date": "13 Jul 2026",
+      "end_date": "16 Jul 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Houghton_Specs",
+      "name": "Houghton - Specs",
+      "scheme": "Houghton",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 80,
+      "end": 85,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "15 Jul 2026",
+      "end_date": "22 Jul 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLNTL_1999_Testing",
+      "name": "PSLNTL_1999 - Coding",
+      "scheme": "PSLNTL_1999",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 81,
+      "end": 84,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLNTL_1999_Coding"
+      ],
+      "start_date": "16 Jul 2026",
+      "end_date": "21 Jul 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Sandberg_UAT",
+      "name": "Sandberg - Coding",
+      "scheme": "Sandberg",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 81,
+      "end": 91,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Sandberg_Testing"
+      ],
+      "start_date": "16 Jul 2026",
+      "end_date": "30 Jul 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "XPSJPS2022_UAT",
+      "name": "XPSJPS2022 - Coding",
+      "scheme": "XPSJPS2022",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 81,
+      "end": 91,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "XPSJPS2022_Testing"
+      ],
+      "start_date": "16 Jul 2026",
+      "end_date": "30 Jul 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "EvonikEPS_Coding",
+      "name": "EvonikEPS - Coding",
+      "scheme": "EvonikEPS",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 85,
+      "end": 95,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "EvonikEPS_Specs"
+      ],
+      "start_date": "22 Jul 2026",
+      "end_date": "5 Aug 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "Threei_Coding",
+      "name": "Threei - Coding",
+      "scheme": "Threei",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 85,
+      "end": 95,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "Threei_Specs"
+      ],
+      "start_date": "22 Jul 2026",
+      "end_date": "5 Aug 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "XPSNuffield_Coding",
+      "name": "XPSNuffield - Coding",
+      "scheme": "XPSNuffield",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 85,
+      "end": 95,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "XPSNuffield_Specs"
+      ],
+      "start_date": "22 Jul 2026",
+      "end_date": "5 Aug 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "XPSPennon_Testing",
+      "name": "XPSPennon - Coding",
+      "scheme": "XPSPennon",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 85,
+      "end": 88,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "XPSPennon_Coding"
+      ],
+      "start_date": "22 Jul 2026",
+      "end_date": "27 Jul 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "XPSRNIB_Specs",
+      "name": "XPSRNIB - Specs",
+      "scheme": "XPSRNIB",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 85,
+      "end": 90,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "22 Jul 2026",
+      "end_date": "29 Jul 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "XPSWPA_Testing",
+      "name": "XPSWPA - Coding",
+      "scheme": "XPSWPA",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 88,
+      "end": 91,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "XPSWPA_Coding"
+      ],
+      "start_date": "27 Jul 2026",
+      "end_date": "30 Jul 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Abaris_Specs",
+      "name": "Abaris - Specs",
+      "scheme": "Abaris",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 90,
+      "end": 95,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "29 Jul 2026",
+      "end_date": "5 Aug 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Headlam Group_Testing",
+      "name": "Headlam Group - Coding",
+      "scheme": "Headlam Group",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 91,
+      "end": 94,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Headlam Group_Coding"
+      ],
+      "start_date": "30 Jul 2026",
+      "end_date": "4 Aug 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLAfton_UAT",
+      "name": "PSLAfton - Coding",
+      "scheme": "PSLAfton",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 91,
+      "end": 101,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLAfton_Testing"
+      ],
+      "start_date": "30 Jul 2026",
+      "end_date": "13 Aug 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "Rexel_UAT",
+      "name": "Rexel - Coding",
+      "scheme": "Rexel",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 91,
+      "end": 101,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Rexel_Testing"
+      ],
+      "start_date": "30 Jul 2026",
+      "end_date": "13 Aug 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "Abaris_Coding",
+      "name": "Abaris - Coding",
+      "scheme": "Abaris",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 95,
+      "end": 105,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "Abaris_Specs"
+      ],
+      "start_date": "5 Aug 2026",
+      "end_date": "19 Aug 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Kenwood_Coding",
+      "name": "Kenwood - Coding",
+      "scheme": "Kenwood",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 95,
+      "end": 105,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "Kenwood_Specs"
+      ],
+      "start_date": "5 Aug 2026",
+      "end_date": "19 Aug 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "TimeWarner_Specs",
+      "name": "TimeWarner - Specs",
+      "scheme": "TimeWarner",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 95,
+      "end": 100,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "5 Aug 2026",
+      "end_date": "12 Aug 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "XPSNuffield_Testing",
+      "name": "XPSNuffield - Coding",
+      "scheme": "XPSNuffield",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 95,
+      "end": 98,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "XPSNuffield_Coding"
+      ],
+      "start_date": "5 Aug 2026",
+      "end_date": "10 Aug 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "XPSRNIB_Coding",
+      "name": "XPSRNIB - Coding",
+      "scheme": "XPSRNIB",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 95,
+      "end": 105,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "XPSRNIB_Specs"
+      ],
+      "start_date": "5 Aug 2026",
+      "end_date": "19 Aug 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "EvonikEPS_Testing",
+      "name": "EvonikEPS - Coding",
+      "scheme": "EvonikEPS",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 98,
+      "end": 101,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "EvonikEPS_Coding"
+      ],
+      "start_date": "10 Aug 2026",
+      "end_date": "13 Aug 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "XPSBramblesEnterprises_Specs",
+      "name": "XPSBramblesEnterprises - Specs",
+      "scheme": "XPSBramblesEnterprises",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 100,
+      "end": 105,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "12 Aug 2026",
+      "end_date": "19 Aug 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLNTL_1999_UAT",
+      "name": "PSLNTL_1999 - Coding",
+      "scheme": "PSLNTL_1999",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 101,
+      "end": 111,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLNTL_1999_Testing"
+      ],
+      "start_date": "13 Aug 2026",
+      "end_date": "27 Aug 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Threei_Testing",
+      "name": "Threei - Coding",
+      "scheme": "Threei",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 101,
+      "end": 104,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Threei_Coding"
+      ],
+      "start_date": "13 Aug 2026",
+      "end_date": "18 Aug 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "XPSPennon_UAT",
+      "name": "XPSPennon - Coding",
+      "scheme": "XPSPennon",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 101,
+      "end": 111,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "XPSPennon_Testing"
+      ],
+      "start_date": "13 Aug 2026",
+      "end_date": "27 Aug 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Comet_Specs",
+      "name": "Comet - Specs",
+      "scheme": "Comet",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 105,
+      "end": 110,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "19 Aug 2026",
+      "end_date": "26 Aug 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "Kenwood_Testing",
+      "name": "Kenwood - Coding",
+      "scheme": "Kenwood",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 105,
+      "end": 108,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Kenwood_Coding"
+      ],
+      "start_date": "19 Aug 2026",
+      "end_date": "24 Aug 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "XPSBramblesEnterprises_Coding",
+      "name": "XPSBramblesEnterprises - Coding",
+      "scheme": "XPSBramblesEnterprises",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 105,
+      "end": 115,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "XPSBramblesEnterprises_Specs"
+      ],
+      "start_date": "19 Aug 2026",
+      "end_date": "2 Sep 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "Abaris_Testing",
+      "name": "Abaris - Coding",
+      "scheme": "Abaris",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 108,
+      "end": 111,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Abaris_Coding"
+      ],
+      "start_date": "24 Aug 2026",
+      "end_date": "27 Aug 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Comet_Coding",
+      "name": "Comet - Coding",
+      "scheme": "Comet",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 110,
+      "end": 120,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "Comet_Specs"
+      ],
+      "start_date": "26 Aug 2026",
+      "end_date": "9 Sep 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "EDoc_Specs",
+      "name": "EDoc - Specs",
+      "scheme": "EDoc",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 110,
+      "end": 115,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "26 Aug 2026",
+      "end_date": "2 Sep 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "Headlam Group_UAT",
+      "name": "Headlam Group - Coding",
+      "scheme": "Headlam Group",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 111,
+      "end": 121,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "Headlam Group_Testing"
+      ],
+      "start_date": "27 Aug 2026",
+      "end_date": "10 Sep 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "XPSRNIB_Testing",
+      "name": "XPSRNIB - Coding",
+      "scheme": "XPSRNIB",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 111,
+      "end": 114,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "XPSRNIB_Coding"
+      ],
+      "start_date": "27 Aug 2026",
+      "end_date": "1 Sep 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "XPSWPA_UAT",
+      "name": "XPSWPA - Coding",
+      "scheme": "XPSWPA",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 111,
+      "end": 121,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "XPSWPA_Testing"
+      ],
+      "start_date": "27 Aug 2026",
+      "end_date": "10 Sep 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Ingenico_Specs",
+      "name": "Ingenico - Specs",
+      "scheme": "Ingenico",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 115,
+      "end": 120,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "2 Sep 2026",
+      "end_date": "9 Sep 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "TimeWarner_Coding",
+      "name": "TimeWarner - Coding",
+      "scheme": "TimeWarner",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 115,
+      "end": 125,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "TimeWarner_Specs"
+      ],
+      "start_date": "2 Sep 2026",
+      "end_date": "16 Sep 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "XPSBramblesEnterprises_Testing",
+      "name": "XPSBramblesEnterprises - Coding",
+      "scheme": "XPSBramblesEnterprises",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 115,
+      "end": 118,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "XPSBramblesEnterprises_Coding"
+      ],
+      "start_date": "2 Sep 2026",
+      "end_date": "7 Sep 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "AccoladeWines_Specs",
+      "name": "AccoladeWines - Specs",
+      "scheme": "AccoladeWines",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 120,
+      "end": 125,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "9 Sep 2026",
+      "end_date": "16 Sep 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "Comet_Testing",
+      "name": "Comet - Coding",
+      "scheme": "Comet",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 120,
+      "end": 123,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Comet_Coding"
+      ],
+      "start_date": "9 Sep 2026",
+      "end_date": "14 Sep 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "Ingenico_Coding",
+      "name": "Ingenico - Coding",
+      "scheme": "Ingenico",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 120,
+      "end": 130,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "Ingenico_Specs"
+      ],
+      "start_date": "9 Sep 2026",
+      "end_date": "23 Sep 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Abaris_UAT",
+      "name": "Abaris - Coding",
+      "scheme": "Abaris",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 121,
+      "end": 131,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Abaris_Testing"
+      ],
+      "start_date": "10 Sep 2026",
+      "end_date": "24 Sep 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "EvonikEPS_UAT",
+      "name": "EvonikEPS - Coding",
+      "scheme": "EvonikEPS",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 121,
+      "end": 131,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "EvonikEPS_Testing"
+      ],
+      "start_date": "10 Sep 2026",
+      "end_date": "24 Sep 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "Colas_Specs",
+      "name": "Colas - Specs",
+      "scheme": "Colas",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 125,
+      "end": 130,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "16 Sep 2026",
+      "end_date": "23 Sep 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "JohnGrooms_Coding",
+      "name": "JohnGrooms - Coding",
+      "scheme": "JohnGrooms",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 125,
+      "end": 135,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "JohnGrooms_Specs"
+      ],
+      "start_date": "16 Sep 2026",
+      "end_date": "30 Sep 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "TimeWarner_Testing",
+      "name": "TimeWarner - Coding",
+      "scheme": "TimeWarner",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 125,
+      "end": 128,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "TimeWarner_Coding"
+      ],
+      "start_date": "16 Sep 2026",
+      "end_date": "21 Sep 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Colas_Coding",
+      "name": "Colas - Coding",
+      "scheme": "Colas",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 130,
+      "end": 140,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "Colas_Specs"
+      ],
+      "start_date": "23 Sep 2026",
+      "end_date": "7 Oct 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "Ingenico_Testing",
+      "name": "Ingenico - Coding",
+      "scheme": "Ingenico",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 130,
+      "end": 133,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Ingenico_Coding"
+      ],
+      "start_date": "23 Sep 2026",
+      "end_date": "28 Sep 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "XPSMouchelSuperannuationFund_Specs",
+      "name": "XPSMouchelSuperannuationFund - Specs",
+      "scheme": "XPSMouchelSuperannuationFund",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 130,
+      "end": 135,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "23 Sep 2026",
+      "end_date": "30 Sep 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Comet_UAT",
+      "name": "Comet - Coding",
+      "scheme": "Comet",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 131,
+      "end": 141,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "Comet_Testing"
+      ],
+      "start_date": "24 Sep 2026",
+      "end_date": "8 Oct 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "XPSRNIB_UAT",
+      "name": "XPSRNIB - Coding",
+      "scheme": "XPSRNIB",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 131,
+      "end": 141,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "XPSRNIB_Testing"
+      ],
+      "start_date": "24 Sep 2026",
+      "end_date": "8 Oct 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "AccoladeWines_Coding",
+      "name": "AccoladeWines - Coding",
+      "scheme": "AccoladeWines",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 135,
+      "end": 145,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "AccoladeWines_Specs"
+      ],
+      "start_date": "30 Sep 2026",
+      "end_date": "14 Oct 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "JohnGrooms_Testing",
+      "name": "JohnGrooms - Coding",
+      "scheme": "JohnGrooms",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 135,
+      "end": 138,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "JohnGrooms_Coding"
+      ],
+      "start_date": "30 Sep 2026",
+      "end_date": "5 Oct 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "NACRO_Specs",
+      "name": "NACRO - Specs",
+      "scheme": "NACRO",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 135,
+      "end": 140,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "30 Sep 2026",
+      "end_date": "7 Oct 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Colas_Testing",
+      "name": "Colas - Coding",
+      "scheme": "Colas",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 140,
+      "end": 143,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Colas_Coding"
+      ],
+      "start_date": "7 Oct 2026",
+      "end_date": "12 Oct 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLCompass_Specs",
+      "name": "PSLCompass - Specs",
+      "scheme": "PSLCompass",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 140,
+      "end": 145,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "7 Oct 2026",
+      "end_date": "14 Oct 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "XPSMouchelSuperannuationFund_Coding",
+      "name": "XPSMouchelSuperannuationFund - Coding",
+      "scheme": "XPSMouchelSuperannuationFund",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 140,
+      "end": 150,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "XPSMouchelSuperannuationFund_Specs"
+      ],
+      "start_date": "7 Oct 2026",
+      "end_date": "21 Oct 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Ingenico_UAT",
+      "name": "Ingenico - Coding",
+      "scheme": "Ingenico",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 141,
+      "end": 151,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Ingenico_Testing"
+      ],
+      "start_date": "8 Oct 2026",
+      "end_date": "22 Oct 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Threei_UAT",
+      "name": "Threei - Coding",
+      "scheme": "Threei",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 141,
+      "end": 151,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "Threei_Testing"
+      ],
+      "start_date": "8 Oct 2026",
+      "end_date": "22 Oct 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "AccoladeWines_Testing",
+      "name": "AccoladeWines - Coding",
+      "scheme": "AccoladeWines",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 145,
+      "end": 148,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "AccoladeWines_Coding"
+      ],
+      "start_date": "14 Oct 2026",
+      "end_date": "19 Oct 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLCBHillierParker_Coding",
+      "name": "PSLCBHillierParker - Coding",
+      "scheme": "PSLCBHillierParker",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 145,
+      "end": 155,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "PSLCBHillierParker_Specs"
+      ],
+      "start_date": "14 Oct 2026",
+      "end_date": "28 Oct 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLCompass_Coding",
+      "name": "PSLCompass - Coding",
+      "scheme": "PSLCompass",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 145,
+      "end": 155,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "PSLCompass_Specs"
+      ],
+      "start_date": "14 Oct 2026",
+      "end_date": "28 Oct 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "Walker Greenbank_Specs",
+      "name": "Walker Greenbank - Specs",
+      "scheme": "Walker Greenbank",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 145,
+      "end": 150,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "14 Oct 2026",
+      "end_date": "21 Oct 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "VectorAeroNew_Specs",
+      "name": "VectorAeroNew - Specs",
+      "scheme": "VectorAeroNew",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 150,
+      "end": 155,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "21 Oct 2026",
+      "end_date": "28 Oct 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "XPSMouchelSuperannuationFund_Testing",
+      "name": "XPSMouchelSuperannuationFund - Coding",
+      "scheme": "XPSMouchelSuperannuationFund",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 150,
+      "end": 153,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "XPSMouchelSuperannuationFund_Coding"
+      ],
+      "start_date": "21 Oct 2026",
+      "end_date": "26 Oct 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Kenwood_UAT",
+      "name": "Kenwood - Coding",
+      "scheme": "Kenwood",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 151,
+      "end": 161,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Kenwood_Testing"
+      ],
+      "start_date": "22 Oct 2026",
+      "end_date": "5 Nov 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "XPSBramblesEnterprises_UAT",
+      "name": "XPSBramblesEnterprises - Coding",
+      "scheme": "XPSBramblesEnterprises",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 151,
+      "end": 161,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "XPSBramblesEnterprises_Testing"
+      ],
+      "start_date": "22 Oct 2026",
+      "end_date": "5 Nov 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLCompass_Testing",
+      "name": "PSLCompass - Coding",
+      "scheme": "PSLCompass",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 155,
+      "end": 158,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLCompass_Coding"
+      ],
+      "start_date": "28 Oct 2026",
+      "end_date": "2 Nov 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLLeonardoElectronics_Specs",
+      "name": "PSLLeonardoElectronics - Specs",
+      "scheme": "PSLLeonardoElectronics",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 155,
+      "end": 160,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "28 Oct 2026",
+      "end_date": "4 Nov 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "VectorAeroNew_Coding",
+      "name": "VectorAeroNew - Coding",
+      "scheme": "VectorAeroNew",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 155,
+      "end": 165,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "VectorAeroNew_Specs"
+      ],
+      "start_date": "28 Oct 2026",
+      "end_date": "11 Nov 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLCBHillierParker_Testing",
+      "name": "PSLCBHillierParker - Coding",
+      "scheme": "PSLCBHillierParker",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 158,
+      "end": 161,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLCBHillierParker_Coding"
+      ],
+      "start_date": "2 Nov 2026",
+      "end_date": "5 Nov 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "Aggregates_Specs",
+      "name": "Aggregates - Specs",
+      "scheme": "Aggregates",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 160,
+      "end": 165,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "4 Nov 2026",
+      "end_date": "11 Nov 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLLeonardoElectronics_Coding",
+      "name": "PSLLeonardoElectronics - Coding",
+      "scheme": "PSLLeonardoElectronics",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 160,
+      "end": 170,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "PSLLeonardoElectronics_Specs"
+      ],
+      "start_date": "4 Nov 2026",
+      "end_date": "18 Nov 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "AccoladeWines_UAT",
+      "name": "AccoladeWines - Coding",
+      "scheme": "AccoladeWines",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 161,
+      "end": 171,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "AccoladeWines_Testing"
+      ],
+      "start_date": "5 Nov 2026",
+      "end_date": "19 Nov 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "Colas_UAT",
+      "name": "Colas - Coding",
+      "scheme": "Colas",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 161,
+      "end": 171,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Colas_Testing"
+      ],
+      "start_date": "5 Nov 2026",
+      "end_date": "19 Nov 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "Aggregates_Coding",
+      "name": "Aggregates - Coding",
+      "scheme": "Aggregates",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 165,
+      "end": 175,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "Aggregates_Specs"
+      ],
+      "start_date": "11 Nov 2026",
+      "end_date": "25 Nov 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "MouchelSPS_Coding",
+      "name": "MouchelSPS - Coding",
+      "scheme": "MouchelSPS",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 165,
+      "end": 175,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "MouchelSPS_Specs"
+      ],
+      "start_date": "11 Nov 2026",
+      "end_date": "25 Nov 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLEcclesiasticals_Specs",
+      "name": "PSLEcclesiasticals - Specs",
+      "scheme": "PSLEcclesiasticals",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 165,
+      "end": 170,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "11 Nov 2026",
+      "end_date": "18 Nov 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "VectorAeroNew_Testing",
+      "name": "VectorAeroNew - Coding",
+      "scheme": "VectorAeroNew",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 165,
+      "end": 168,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "VectorAeroNew_Coding"
+      ],
+      "start_date": "11 Nov 2026",
+      "end_date": "16 Nov 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "KierGroup_Specs",
+      "name": "KierGroup - Specs",
+      "scheme": "KierGroup",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 170,
+      "end": 175,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "18 Nov 2026",
+      "end_date": "25 Nov 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "PSLLeonardoElectronics_Testing",
+      "name": "PSLLeonardoElectronics - Coding",
+      "scheme": "PSLLeonardoElectronics",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 170,
+      "end": 173,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLLeonardoElectronics_Coding"
+      ],
+      "start_date": "18 Nov 2026",
+      "end_date": "23 Nov 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "TimeWarner_UAT",
+      "name": "TimeWarner - Coding",
+      "scheme": "TimeWarner",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 171,
+      "end": 181,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "TimeWarner_Testing"
+      ],
+      "start_date": "19 Nov 2026",
+      "end_date": "3 Dec 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "VectorAeroNew_UAT",
+      "name": "VectorAeroNew - Coding",
+      "scheme": "VectorAeroNew",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 171,
+      "end": 181,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "VectorAeroNew_Testing"
+      ],
+      "start_date": "19 Nov 2026",
+      "end_date": "3 Dec 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "KierGroup_Coding",
+      "name": "KierGroup - Coding",
+      "scheme": "KierGroup",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 175,
+      "end": 185,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "KierGroup_Specs"
+      ],
+      "start_date": "25 Nov 2026",
+      "end_date": "9 Dec 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "MouchelSPS_Testing",
+      "name": "MouchelSPS - Coding",
+      "scheme": "MouchelSPS",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 175,
+      "end": 178,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "MouchelSPS_Coding"
+      ],
+      "start_date": "25 Nov 2026",
+      "end_date": "30 Nov 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLEcclesiasticals_Coding",
+      "name": "PSLEcclesiasticals - Coding",
+      "scheme": "PSLEcclesiasticals",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 175,
+      "end": 185,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "PSLEcclesiasticals_Specs"
+      ],
+      "start_date": "25 Nov 2026",
+      "end_date": "9 Dec 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "XPSInterpublic_Specs",
+      "name": "XPSInterpublic - Specs",
+      "scheme": "XPSInterpublic",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 175,
+      "end": 180,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "25 Nov 2026",
+      "end_date": "2 Dec 2026",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Aggregates_Testing",
+      "name": "Aggregates - Coding",
+      "scheme": "Aggregates",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 178,
+      "end": 181,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Aggregates_Coding"
+      ],
+      "start_date": "30 Nov 2026",
+      "end_date": "3 Dec 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "CrestNicholson_Specs",
+      "name": "CrestNicholson - Specs",
+      "scheme": "CrestNicholson",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 180,
+      "end": 185,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "2 Dec 2026",
+      "end_date": "9 Dec 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "EGL_UAT",
+      "name": "EGL - Coding",
+      "scheme": "EGL",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 181,
+      "end": 191,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "EGL_Testing"
+      ],
+      "start_date": "3 Dec 2026",
+      "end_date": "17 Dec 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLLeonardoElectronics_UAT",
+      "name": "PSLLeonardoElectronics - Coding",
+      "scheme": "PSLLeonardoElectronics",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 181,
+      "end": 191,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLLeonardoElectronics_Testing"
+      ],
+      "start_date": "3 Dec 2026",
+      "end_date": "17 Dec 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Houghton_Coding",
+      "name": "Houghton - Coding",
+      "scheme": "Houghton",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 185,
+      "end": 195,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "Houghton_Specs"
+      ],
+      "start_date": "9 Dec 2026",
+      "end_date": "23 Dec 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "KierGroup_Testing",
+      "name": "KierGroup - Coding",
+      "scheme": "KierGroup",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 185,
+      "end": 188,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "KierGroup_Coding"
+      ],
+      "start_date": "9 Dec 2026",
+      "end_date": "14 Dec 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "PSLPrudential_Specs",
+      "name": "PSLPrudential - Specs",
+      "scheme": "PSLPrudential",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 185,
+      "end": 190,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "9 Dec 2026",
+      "end_date": "16 Dec 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "PSLPrudential_Specs",
+      "name": "PSLPrudential - Specs",
+      "scheme": "PSLPrudential",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 185,
+      "end": 190,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "9 Dec 2026",
+      "end_date": "16 Dec 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "PSLEcclesiasticals_Testing",
+      "name": "PSLEcclesiasticals - Coding",
+      "scheme": "PSLEcclesiasticals",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 188,
+      "end": 191,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLEcclesiasticals_Coding"
+      ],
+      "start_date": "14 Dec 2026",
+      "end_date": "17 Dec 2026",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "Leisure Link_Specs",
+      "name": "Leisure Link - Specs",
+      "scheme": "Leisure Link",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 190,
+      "end": 195,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "16 Dec 2026",
+      "end_date": "23 Dec 2026",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLPrudential_Coding",
+      "name": "PSLPrudential - Coding",
+      "scheme": "PSLPrudential",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 190,
+      "end": 200,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "PSLPrudential_Specs"
+      ],
+      "start_date": "16 Dec 2026",
+      "end_date": "30 Dec 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "PSLPrudential_Coding",
+      "name": "PSLPrudential - Coding",
+      "scheme": "PSLPrudential",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 190,
+      "end": 200,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "PSLPrudential_Specs"
+      ],
+      "start_date": "16 Dec 2026",
+      "end_date": "30 Dec 2026",
+      "color": "#F44336"
+    },
+    {
+      "id": "KierGroup_UAT",
+      "name": "KierGroup - Coding",
+      "scheme": "KierGroup",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 191,
+      "end": 201,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "KierGroup_Testing"
+      ],
+      "start_date": "17 Dec 2026",
+      "end_date": "31 Dec 2026",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "PSLCompass_UAT",
+      "name": "PSLCompass - Coding",
+      "scheme": "PSLCompass",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 191,
+      "end": 201,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLCompass_Testing"
+      ],
+      "start_date": "17 Dec 2026",
+      "end_date": "31 Dec 2026",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "Houghton_Testing",
+      "name": "Houghton - Coding",
+      "scheme": "Houghton",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 195,
+      "end": 198,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Houghton_Coding"
+      ],
+      "start_date": "23 Dec 2026",
+      "end_date": "28 Dec 2026",
+      "color": "#795548"
+    },
+    {
+      "id": "Leisure Link_Coding",
+      "name": "Leisure Link - Coding",
+      "scheme": "Leisure Link",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 195,
+      "end": 205,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "Leisure Link_Specs"
+      ],
+      "start_date": "23 Dec 2026",
+      "end_date": "6 Jan 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "MayGurney_Specs",
+      "name": "MayGurney - Specs",
+      "scheme": "MayGurney",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 195,
+      "end": 200,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "23 Dec 2026",
+      "end_date": "30 Dec 2026",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Walker Greenbank_Coding",
+      "name": "Walker Greenbank - Coding",
+      "scheme": "Walker Greenbank",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 195,
+      "end": 205,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "Walker Greenbank_Specs"
+      ],
+      "start_date": "23 Dec 2026",
+      "end_date": "6 Jan 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "PSLPrudential_Testing",
+      "name": "PSLPrudential - Coding",
+      "scheme": "PSLPrudential",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 200,
+      "end": 203,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLPrudential_Coding"
+      ],
+      "start_date": "30 Dec 2026",
+      "end_date": "4 Jan 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "PSLPrudential_Testing",
+      "name": "PSLPrudential - Coding",
+      "scheme": "PSLPrudential",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 200,
+      "end": 203,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLPrudential_Coding"
+      ],
+      "start_date": "30 Dec 2026",
+      "end_date": "4 Jan 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "VOCAUpgrade_Specs",
+      "name": "VOCAUpgrade - Specs",
+      "scheme": "VOCAUpgrade",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 200,
+      "end": 205,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "30 Dec 2026",
+      "end_date": "6 Jan 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLEcclesiasticals_UAT",
+      "name": "PSLEcclesiasticals - Coding",
+      "scheme": "PSLEcclesiasticals",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 201,
+      "end": 211,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLEcclesiasticals_Testing"
+      ],
+      "start_date": "31 Dec 2026",
+      "end_date": "14 Jan 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "XPSMouchelSuperannuationFund_UAT",
+      "name": "XPSMouchelSuperannuationFund - Coding",
+      "scheme": "XPSMouchelSuperannuationFund",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 201,
+      "end": 211,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "XPSMouchelSuperannuationFund_Testing"
+      ],
+      "start_date": "31 Dec 2026",
+      "end_date": "14 Jan 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Leisure Link_Testing",
+      "name": "Leisure Link - Coding",
+      "scheme": "Leisure Link",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 205,
+      "end": 208,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Leisure Link_Coding"
+      ],
+      "start_date": "6 Jan 2027",
+      "end_date": "11 Jan 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSA_Specs",
+      "name": "PSA - Specs",
+      "scheme": "PSA",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 205,
+      "end": 210,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "6 Jan 2027",
+      "end_date": "13 Jan 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "VOCAUpgrade_Coding",
+      "name": "VOCAUpgrade - Coding",
+      "scheme": "VOCAUpgrade",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 205,
+      "end": 215,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "VOCAUpgrade_Specs"
+      ],
+      "start_date": "6 Jan 2027",
+      "end_date": "20 Jan 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "Walker Greenbank_Testing",
+      "name": "Walker Greenbank - Coding",
+      "scheme": "Walker Greenbank",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 208,
+      "end": 211,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Walker Greenbank_Coding"
+      ],
+      "start_date": "11 Jan 2027",
+      "end_date": "14 Jan 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "GallifordTry_Specs",
+      "name": "GallifordTry - Specs",
+      "scheme": "GallifordTry",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 210,
+      "end": 215,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "13 Jan 2027",
+      "end_date": "20 Jan 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Aggregates_UAT",
+      "name": "Aggregates - Coding",
+      "scheme": "Aggregates",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 211,
+      "end": 221,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "Aggregates_Testing"
+      ],
+      "start_date": "14 Jan 2027",
+      "end_date": "28 Jan 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLCBHillierParker_UAT",
+      "name": "PSLCBHillierParker - Coding",
+      "scheme": "PSLCBHillierParker",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 211,
+      "end": 221,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "PSLCBHillierParker_Testing"
+      ],
+      "start_date": "14 Jan 2027",
+      "end_date": "28 Jan 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "CrestNicholson_Coding",
+      "name": "CrestNicholson - Coding",
+      "scheme": "CrestNicholson",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 215,
+      "end": 225,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "CrestNicholson_Specs"
+      ],
+      "start_date": "20 Jan 2027",
+      "end_date": "3 Feb 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "GallifordTry_Coding",
+      "name": "GallifordTry - Coding",
+      "scheme": "GallifordTry",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 215,
+      "end": 225,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "GallifordTry_Specs"
+      ],
+      "start_date": "20 Jan 2027",
+      "end_date": "3 Feb 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Quarriers_Specs",
+      "name": "Quarriers - Specs",
+      "scheme": "Quarriers",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 215,
+      "end": 220,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "20 Jan 2027",
+      "end_date": "27 Jan 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "VOCAUpgrade_Testing",
+      "name": "VOCAUpgrade - Coding",
+      "scheme": "VOCAUpgrade",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 215,
+      "end": 218,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "VOCAUpgrade_Coding"
+      ],
+      "start_date": "20 Jan 2027",
+      "end_date": "25 Jan 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "XPSPenguin_Specs",
+      "name": "XPSPenguin - Specs",
+      "scheme": "XPSPenguin",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 220,
+      "end": 225,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "27 Jan 2027",
+      "end_date": "3 Feb 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "Houghton_UAT",
+      "name": "Houghton - Coding",
+      "scheme": "Houghton",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 221,
+      "end": 231,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Houghton_Testing"
+      ],
+      "start_date": "28 Jan 2027",
+      "end_date": "11 Feb 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLPrudential_UAT",
+      "name": "PSLPrudential - Coding",
+      "scheme": "PSLPrudential",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 221,
+      "end": 231,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLPrudential_Testing"
+      ],
+      "start_date": "28 Jan 2027",
+      "end_date": "11 Feb 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "PSLPrudential_UAT",
+      "name": "PSLPrudential - Coding",
+      "scheme": "PSLPrudential",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 221,
+      "end": 231,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLPrudential_Testing"
+      ],
+      "start_date": "28 Jan 2027",
+      "end_date": "11 Feb 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "GallifordTry_Testing",
+      "name": "GallifordTry - Coding",
+      "scheme": "GallifordTry",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 225,
+      "end": 228,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "GallifordTry_Coding"
+      ],
+      "start_date": "3 Feb 2027",
+      "end_date": "8 Feb 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "NACRO_Coding",
+      "name": "NACRO - Coding",
+      "scheme": "NACRO",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 225,
+      "end": 235,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "NACRO_Specs"
+      ],
+      "start_date": "3 Feb 2027",
+      "end_date": "17 Feb 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "PSLYBS_Specs",
+      "name": "PSLYBS - Specs",
+      "scheme": "PSLYBS",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 225,
+      "end": 230,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "3 Feb 2027",
+      "end_date": "10 Feb 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "CrestNicholson_Testing",
+      "name": "CrestNicholson - Coding",
+      "scheme": "CrestNicholson",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 228,
+      "end": 231,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "CrestNicholson_Coding"
+      ],
+      "start_date": "8 Feb 2027",
+      "end_date": "11 Feb 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "Vector AeroSpace_Specs",
+      "name": "Vector AeroSpace - Specs",
+      "scheme": "Vector AeroSpace",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 230,
+      "end": 235,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "10 Feb 2027",
+      "end_date": "17 Feb 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "CrestNicholson_UAT",
+      "name": "CrestNicholson - Coding",
+      "scheme": "CrestNicholson",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 231,
+      "end": 241,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "CrestNicholson_Testing"
+      ],
+      "start_date": "11 Feb 2027",
+      "end_date": "25 Feb 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "VOCAUpgrade_UAT",
+      "name": "VOCAUpgrade - Coding",
+      "scheme": "VOCAUpgrade",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 231,
+      "end": 241,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "VOCAUpgrade_Testing"
+      ],
+      "start_date": "11 Feb 2027",
+      "end_date": "25 Feb 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "JICase_Specs",
+      "name": "JICase - Specs",
+      "scheme": "JICase",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 235,
+      "end": 240,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "17 Feb 2027",
+      "end_date": "24 Feb 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "NACRO_Testing",
+      "name": "NACRO - Coding",
+      "scheme": "NACRO",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 235,
+      "end": 238,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "NACRO_Coding"
+      ],
+      "start_date": "17 Feb 2027",
+      "end_date": "22 Feb 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Quarriers_Coding",
+      "name": "Quarriers - Coding",
+      "scheme": "Quarriers",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 235,
+      "end": 245,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "Quarriers_Specs"
+      ],
+      "start_date": "17 Feb 2027",
+      "end_date": "3 Mar 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Vector AeroSpace_Coding",
+      "name": "Vector AeroSpace - Coding",
+      "scheme": "Vector AeroSpace",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 235,
+      "end": 245,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "Vector AeroSpace_Specs"
+      ],
+      "start_date": "17 Feb 2027",
+      "end_date": "3 Mar 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "FIAT_Specs",
+      "name": "FIAT - Specs",
+      "scheme": "FIAT",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 240,
+      "end": 245,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "24 Feb 2027",
+      "end_date": "3 Mar 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "FIAT_Specs",
+      "name": "FIAT - Specs",
+      "scheme": "FIAT",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 240,
+      "end": 245,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "24 Feb 2027",
+      "end_date": "3 Mar 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "Leisure Link_UAT",
+      "name": "Leisure Link - Coding",
+      "scheme": "Leisure Link",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 241,
+      "end": 251,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "Leisure Link_Testing"
+      ],
+      "start_date": "25 Feb 2027",
+      "end_date": "11 Mar 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "NACRO_UAT",
+      "name": "NACRO - Coding",
+      "scheme": "NACRO",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 241,
+      "end": 251,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "NACRO_Testing"
+      ],
+      "start_date": "25 Feb 2027",
+      "end_date": "11 Mar 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "FIAT_Coding",
+      "name": "FIAT - Coding",
+      "scheme": "FIAT",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 245,
+      "end": 255,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "FIAT_Specs"
+      ],
+      "start_date": "3 Mar 2027",
+      "end_date": "17 Mar 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "FIAT_Coding",
+      "name": "FIAT - Coding",
+      "scheme": "FIAT",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 245,
+      "end": 255,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "FIAT_Specs"
+      ],
+      "start_date": "3 Mar 2027",
+      "end_date": "17 Mar 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLJPS_Specs",
+      "name": "PSLJPS - Specs",
+      "scheme": "PSLJPS",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 245,
+      "end": 250,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "3 Mar 2027",
+      "end_date": "10 Mar 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "Vector AeroSpace_Testing",
+      "name": "Vector AeroSpace - Coding",
+      "scheme": "Vector AeroSpace",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 245,
+      "end": 248,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Vector AeroSpace_Coding"
+      ],
+      "start_date": "3 Mar 2027",
+      "end_date": "8 Mar 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "XPSInterpublic_Coding",
+      "name": "XPSInterpublic - Coding",
+      "scheme": "XPSInterpublic",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 245,
+      "end": 255,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "XPSInterpublic_Specs"
+      ],
+      "start_date": "3 Mar 2027",
+      "end_date": "17 Mar 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Quarriers_Testing",
+      "name": "Quarriers - Coding",
+      "scheme": "Quarriers",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 248,
+      "end": 251,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Quarriers_Coding"
+      ],
+      "start_date": "8 Mar 2027",
+      "end_date": "11 Mar 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "CBRE_Specs",
+      "name": "CBRE - Specs",
+      "scheme": "CBRE",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 250,
+      "end": 255,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "10 Mar 2027",
+      "end_date": "17 Mar 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "PSLJPS_Coding",
+      "name": "PSLJPS - Coding",
+      "scheme": "PSLJPS",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 250,
+      "end": 260,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "PSLJPS_Specs"
+      ],
+      "start_date": "10 Mar 2027",
+      "end_date": "24 Mar 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "Quarriers_UAT",
+      "name": "Quarriers - Coding",
+      "scheme": "Quarriers",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 251,
+      "end": 261,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Quarriers_Testing"
+      ],
+      "start_date": "11 Mar 2027",
+      "end_date": "25 Mar 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Vector AeroSpace_UAT",
+      "name": "Vector AeroSpace - Coding",
+      "scheme": "Vector AeroSpace",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 251,
+      "end": 261,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "Vector AeroSpace_Testing"
+      ],
+      "start_date": "11 Mar 2027",
+      "end_date": "25 Mar 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "FIAT_Testing",
+      "name": "FIAT - Coding",
+      "scheme": "FIAT",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 255,
+      "end": 258,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "FIAT_Coding"
+      ],
+      "start_date": "17 Mar 2027",
+      "end_date": "22 Mar 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "FIAT_Testing",
+      "name": "FIAT - Coding",
+      "scheme": "FIAT",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 255,
+      "end": 258,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "FIAT_Coding"
+      ],
+      "start_date": "17 Mar 2027",
+      "end_date": "22 Mar 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "Iveco_Specs",
+      "name": "Iveco - Specs",
+      "scheme": "Iveco",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 255,
+      "end": 260,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "17 Mar 2027",
+      "end_date": "24 Mar 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "PSLYBS_Coding",
+      "name": "PSLYBS - Coding",
+      "scheme": "PSLYBS",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 255,
+      "end": 265,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "PSLYBS_Specs"
+      ],
+      "start_date": "17 Mar 2027",
+      "end_date": "31 Mar 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "XPSInterpublic_Testing",
+      "name": "XPSInterpublic - Coding",
+      "scheme": "XPSInterpublic",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 258,
+      "end": 261,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "XPSInterpublic_Coding"
+      ],
+      "start_date": "22 Mar 2027",
+      "end_date": "25 Mar 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "CBRE_Coding",
+      "name": "CBRE - Coding",
+      "scheme": "CBRE",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 260,
+      "end": 270,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "CBRE_Specs"
+      ],
+      "start_date": "24 Mar 2027",
+      "end_date": "7 Apr 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Mencap_Specs",
+      "name": "Mencap - Specs",
+      "scheme": "Mencap",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 260,
+      "end": 265,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "24 Mar 2027",
+      "end_date": "31 Mar 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "GallifordTry_UAT",
+      "name": "GallifordTry - Coding",
+      "scheme": "GallifordTry",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 261,
+      "end": 271,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "GallifordTry_Testing"
+      ],
+      "start_date": "25 Mar 2027",
+      "end_date": "8 Apr 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "JohnGrooms_UAT",
+      "name": "JohnGrooms - Coding",
+      "scheme": "JohnGrooms",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 261,
+      "end": 271,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "JohnGrooms_Testing"
+      ],
+      "start_date": "25 Mar 2027",
+      "end_date": "8 Apr 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLJPS_Testing",
+      "name": "PSLJPS - Coding",
+      "scheme": "PSLJPS",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 261,
+      "end": 264,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLJPS_Coding"
+      ],
+      "start_date": "25 Mar 2027",
+      "end_date": "30 Mar 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "Mencap_Coding",
+      "name": "Mencap - Coding",
+      "scheme": "Mencap",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 265,
+      "end": 275,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "Mencap_Specs"
+      ],
+      "start_date": "31 Mar 2027",
+      "end_date": "14 Apr 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLYBS_Testing",
+      "name": "PSLYBS - Coding",
+      "scheme": "PSLYBS",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 265,
+      "end": 268,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLYBS_Coding"
+      ],
+      "start_date": "31 Mar 2027",
+      "end_date": "5 Apr 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "Ronez_Specs",
+      "name": "Ronez - Specs",
+      "scheme": "Ronez",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 265,
+      "end": 270,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "31 Mar 2027",
+      "end_date": "7 Apr 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "CBRE_Testing",
+      "name": "CBRE - Coding",
+      "scheme": "CBRE",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 270,
+      "end": 273,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "CBRE_Coding"
+      ],
+      "start_date": "7 Apr 2027",
+      "end_date": "12 Apr 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Iveco_Coding",
+      "name": "Iveco - Coding",
+      "scheme": "Iveco",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 270,
+      "end": 280,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "Iveco_Specs"
+      ],
+      "start_date": "7 Apr 2027",
+      "end_date": "21 Apr 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "PSLMandG_Specs",
+      "name": "PSLMandG - Specs",
+      "scheme": "PSLMandG",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 270,
+      "end": 275,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "7 Apr 2027",
+      "end_date": "14 Apr 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLJPS_UAT",
+      "name": "PSLJPS - Coding",
+      "scheme": "PSLJPS",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 271,
+      "end": 281,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLJPS_Testing"
+      ],
+      "start_date": "8 Apr 2027",
+      "end_date": "22 Apr 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLYBS_UAT",
+      "name": "PSLYBS - Coding",
+      "scheme": "PSLYBS",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 271,
+      "end": 281,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "PSLYBS_Testing"
+      ],
+      "start_date": "8 Apr 2027",
+      "end_date": "22 Apr 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "MayGurney_Coding",
+      "name": "MayGurney - Coding",
+      "scheme": "MayGurney",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 275,
+      "end": 285,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "MayGurney_Specs"
+      ],
+      "start_date": "14 Apr 2027",
+      "end_date": "28 Apr 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Mencap_Testing",
+      "name": "Mencap - Coding",
+      "scheme": "Mencap",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 275,
+      "end": 278,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Mencap_Coding"
+      ],
+      "start_date": "14 Apr 2027",
+      "end_date": "19 Apr 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLMandG_Coding",
+      "name": "PSLMandG - Coding",
+      "scheme": "PSLMandG",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 275,
+      "end": 285,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "PSLMandG_Specs"
+      ],
+      "start_date": "14 Apr 2027",
+      "end_date": "28 Apr 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "XPSBramblesUK_Specs",
+      "name": "XPSBramblesUK - Specs",
+      "scheme": "XPSBramblesUK",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 275,
+      "end": 280,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "14 Apr 2027",
+      "end_date": "21 Apr 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Biwater_Specs",
+      "name": "Biwater - Specs",
+      "scheme": "Biwater",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 280,
+      "end": 285,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "21 Apr 2027",
+      "end_date": "28 Apr 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "Iveco_Testing",
+      "name": "Iveco - Coding",
+      "scheme": "Iveco",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 280,
+      "end": 283,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Iveco_Coding"
+      ],
+      "start_date": "21 Apr 2027",
+      "end_date": "26 Apr 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Ronez_Coding",
+      "name": "Ronez - Coding",
+      "scheme": "Ronez",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 280,
+      "end": 290,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "Ronez_Specs"
+      ],
+      "start_date": "21 Apr 2027",
+      "end_date": "5 May 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "Mencap_UAT",
+      "name": "Mencap - Coding",
+      "scheme": "Mencap",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 281,
+      "end": 291,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Mencap_Testing"
+      ],
+      "start_date": "22 Apr 2027",
+      "end_date": "6 May 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "MouchelSPS_UAT",
+      "name": "MouchelSPS - Coding",
+      "scheme": "MouchelSPS",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 281,
+      "end": 291,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "MouchelSPS_Testing"
+      ],
+      "start_date": "22 Apr 2027",
+      "end_date": "6 May 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "Biwater_Coding",
+      "name": "Biwater - Coding",
+      "scheme": "Biwater",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 285,
+      "end": 295,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "Biwater_Specs"
+      ],
+      "start_date": "28 Apr 2027",
+      "end_date": "12 May 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "EvonikLGPT_Specs",
+      "name": "EvonikLGPT - Specs",
+      "scheme": "EvonikLGPT",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 285,
+      "end": 290,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "28 Apr 2027",
+      "end_date": "5 May 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSA_Coding",
+      "name": "PSA - Coding",
+      "scheme": "PSA",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 285,
+      "end": 295,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "PSA_Specs"
+      ],
+      "start_date": "28 Apr 2027",
+      "end_date": "12 May 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLMandG_Testing",
+      "name": "PSLMandG - Coding",
+      "scheme": "PSLMandG",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 285,
+      "end": 288,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLMandG_Coding"
+      ],
+      "start_date": "28 Apr 2027",
+      "end_date": "3 May 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "MayGurney_Testing",
+      "name": "MayGurney - Coding",
+      "scheme": "MayGurney",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 288,
+      "end": 291,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "MayGurney_Coding"
+      ],
+      "start_date": "3 May 2027",
+      "end_date": "6 May 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Ryder_Specs",
+      "name": "Ryder - Specs",
+      "scheme": "Ryder",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 290,
+      "end": 295,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "5 May 2027",
+      "end_date": "12 May 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "PSLMandG_UAT",
+      "name": "PSLMandG - Coding",
+      "scheme": "PSLMandG",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 291,
+      "end": 301,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "PSLMandG_Testing"
+      ],
+      "start_date": "6 May 2027",
+      "end_date": "20 May 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "Ronez_Testing",
+      "name": "Ronez - Coding",
+      "scheme": "Ronez",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 291,
+      "end": 294,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Ronez_Coding"
+      ],
+      "start_date": "6 May 2027",
+      "end_date": "11 May 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "Walker Greenbank_UAT",
+      "name": "Walker Greenbank - Coding",
+      "scheme": "Walker Greenbank",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 291,
+      "end": 301,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "Walker Greenbank_Testing"
+      ],
+      "start_date": "6 May 2027",
+      "end_date": "20 May 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "EvonikLGPT_Coding",
+      "name": "EvonikLGPT - Coding",
+      "scheme": "EvonikLGPT",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 295,
+      "end": 305,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "EvonikLGPT_Specs"
+      ],
+      "start_date": "12 May 2027",
+      "end_date": "26 May 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSA_Testing",
+      "name": "PSA - Coding",
+      "scheme": "PSA",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 295,
+      "end": 298,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSA_Coding"
+      ],
+      "start_date": "12 May 2027",
+      "end_date": "17 May 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLAvivaASPS_Specs",
+      "name": "PSLAvivaASPS - Specs",
+      "scheme": "PSLAvivaASPS",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 295,
+      "end": 300,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "12 May 2027",
+      "end_date": "19 May 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Biwater_Testing",
+      "name": "Biwater - Coding",
+      "scheme": "Biwater",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 298,
+      "end": 301,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Biwater_Coding"
+      ],
+      "start_date": "17 May 2027",
+      "end_date": "20 May 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "HBG_Specs",
+      "name": "HBG - Specs",
+      "scheme": "HBG",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 300,
+      "end": 305,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "19 May 2027",
+      "end_date": "26 May 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLAvivaASPS_Coding",
+      "name": "PSLAvivaASPS - Coding",
+      "scheme": "PSLAvivaASPS",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 300,
+      "end": 310,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "PSLAvivaASPS_Specs"
+      ],
+      "start_date": "19 May 2027",
+      "end_date": "2 Jun 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "CPL_Testing",
+      "name": "CPL - Coding",
+      "scheme": "CPL",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 301,
+      "end": 304,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "CPL_Coding"
+      ],
+      "start_date": "20 May 2027",
+      "end_date": "25 May 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "Iveco_UAT",
+      "name": "Iveco - Coding",
+      "scheme": "Iveco",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 301,
+      "end": 311,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Iveco_Testing"
+      ],
+      "start_date": "20 May 2027",
+      "end_date": "3 Jun 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Ronez_UAT",
+      "name": "Ronez - Coding",
+      "scheme": "Ronez",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 301,
+      "end": 311,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "Ronez_Testing"
+      ],
+      "start_date": "20 May 2027",
+      "end_date": "3 Jun 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "BAA_Coding",
+      "name": "BAA - Coding",
+      "scheme": "BAA",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 305,
+      "end": 315,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "BAA_Specs"
+      ],
+      "start_date": "26 May 2027",
+      "end_date": "9 Jun 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "MB_Specs",
+      "name": "MB - Specs",
+      "scheme": "MB",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 305,
+      "end": 310,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "26 May 2027",
+      "end_date": "2 Jun 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "AECOMMaunsell_Specs",
+      "name": "AECOMMaunsell - Specs",
+      "scheme": "AECOMMaunsell",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 310,
+      "end": 315,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "2 Jun 2027",
+      "end_date": "9 Jun 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLAvivaASPS_Testing",
+      "name": "PSLAvivaASPS - Coding",
+      "scheme": "PSLAvivaASPS",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 310,
+      "end": 313,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLAvivaASPS_Coding"
+      ],
+      "start_date": "2 Jun 2027",
+      "end_date": "7 Jun 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Biwater_UAT",
+      "name": "Biwater - Coding",
+      "scheme": "Biwater",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 311,
+      "end": 321,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Biwater_Testing"
+      ],
+      "start_date": "3 Jun 2027",
+      "end_date": "17 Jun 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "XPSInterpublic_UAT",
+      "name": "XPSInterpublic - Coding",
+      "scheme": "XPSInterpublic",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 311,
+      "end": 321,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "XPSInterpublic_Testing"
+      ],
+      "start_date": "3 Jun 2027",
+      "end_date": "17 Jun 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "AECOMMaunsell_Coding",
+      "name": "AECOMMaunsell - Coding",
+      "scheme": "AECOMMaunsell",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 315,
+      "end": 325,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "AECOMMaunsell_Specs"
+      ],
+      "start_date": "9 Jun 2027",
+      "end_date": "23 Jun 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "BAA_Testing",
+      "name": "BAA - Coding",
+      "scheme": "BAA",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 315,
+      "end": 318,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "BAA_Coding"
+      ],
+      "start_date": "9 Jun 2027",
+      "end_date": "14 Jun 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLAvivaFPPS_Specs",
+      "name": "PSLAvivaFPPS - Specs",
+      "scheme": "PSLAvivaFPPS",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 315,
+      "end": 320,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "9 Jun 2027",
+      "end_date": "16 Jun 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "EvonikLGPT_Testing",
+      "name": "EvonikLGPT - Coding",
+      "scheme": "EvonikLGPT",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 318,
+      "end": 321,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "EvonikLGPT_Coding"
+      ],
+      "start_date": "14 Jun 2027",
+      "end_date": "17 Jun 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLAvivaFPPS_Coding",
+      "name": "PSLAvivaFPPS - Coding",
+      "scheme": "PSLAvivaFPPS",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 320,
+      "end": 330,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "PSLAvivaFPPS_Specs"
+      ],
+      "start_date": "16 Jun 2027",
+      "end_date": "30 Jun 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "St Ives_Specs",
+      "name": "St Ives - Specs",
+      "scheme": "St Ives",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 320,
+      "end": 325,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "16 Jun 2027",
+      "end_date": "23 Jun 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "CBRE_UAT",
+      "name": "CBRE - Coding",
+      "scheme": "CBRE",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 321,
+      "end": 331,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "CBRE_Testing"
+      ],
+      "start_date": "17 Jun 2027",
+      "end_date": "1 Jul 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "FIAT_UAT",
+      "name": "FIAT - Coding",
+      "scheme": "FIAT",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 321,
+      "end": 331,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "FIAT_Testing"
+      ],
+      "start_date": "17 Jun 2027",
+      "end_date": "1 Jul 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "FIAT_UAT",
+      "name": "FIAT - Coding",
+      "scheme": "FIAT",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 321,
+      "end": 331,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "FIAT_Testing"
+      ],
+      "start_date": "17 Jun 2027",
+      "end_date": "1 Jul 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "AECOMMaunsell_Testing",
+      "name": "AECOMMaunsell - Coding",
+      "scheme": "AECOMMaunsell",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 325,
+      "end": 328,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "AECOMMaunsell_Coding"
+      ],
+      "start_date": "23 Jun 2027",
+      "end_date": "28 Jun 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "HBG_Coding",
+      "name": "HBG - Coding",
+      "scheme": "HBG",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 325,
+      "end": 335,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "HBG_Specs"
+      ],
+      "start_date": "23 Jun 2027",
+      "end_date": "7 Jul 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "Lonza_Specs",
+      "name": "Lonza - Specs",
+      "scheme": "Lonza",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 325,
+      "end": 330,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "23 Jun 2027",
+      "end_date": "30 Jun 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "Lonza_Coding",
+      "name": "Lonza - Coding",
+      "scheme": "Lonza",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 330,
+      "end": 340,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "Lonza_Specs"
+      ],
+      "start_date": "30 Jun 2027",
+      "end_date": "14 Jul 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLAtkins_Specs",
+      "name": "PSLAtkins - Specs",
+      "scheme": "PSLAtkins",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 330,
+      "end": 335,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "30 Jun 2027",
+      "end_date": "7 Jul 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "CPL_UAT",
+      "name": "CPL - Coding",
+      "scheme": "CPL",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 331,
+      "end": 341,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "CPL_Testing"
+      ],
+      "start_date": "1 Jul 2027",
+      "end_date": "15 Jul 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "PSLAvivaFPPS_Testing",
+      "name": "PSLAvivaFPPS - Coding",
+      "scheme": "PSLAvivaFPPS",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 331,
+      "end": 334,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLAvivaFPPS_Coding"
+      ],
+      "start_date": "1 Jul 2027",
+      "end_date": "6 Jul 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "XPSNuffield_UAT",
+      "name": "XPSNuffield - Coding",
+      "scheme": "XPSNuffield",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 331,
+      "end": 341,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "XPSNuffield_Testing"
+      ],
+      "start_date": "1 Jul 2027",
+      "end_date": "15 Jul 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "HBG_Testing",
+      "name": "HBG - Coding",
+      "scheme": "HBG",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 335,
+      "end": 338,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "HBG_Coding"
+      ],
+      "start_date": "7 Jul 2027",
+      "end_date": "12 Jul 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "MB_Coding",
+      "name": "MB - Coding",
+      "scheme": "MB",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 335,
+      "end": 345,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "MB_Specs"
+      ],
+      "start_date": "7 Jul 2027",
+      "end_date": "21 Jul 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "PSLAECOMOscarFaber_Specs",
+      "name": "PSLAECOMOscarFaber - Specs",
+      "scheme": "PSLAECOMOscarFaber",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 335,
+      "end": 340,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "7 Jul 2027",
+      "end_date": "14 Jul 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "CaravanClubUpgrade_Specs",
+      "name": "CaravanClubUpgrade - Specs",
+      "scheme": "CaravanClubUpgrade",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 340,
+      "end": 345,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "14 Jul 2027",
+      "end_date": "21 Jul 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "Lonza_Testing",
+      "name": "Lonza - Coding",
+      "scheme": "Lonza",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 340,
+      "end": 343,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Lonza_Coding"
+      ],
+      "start_date": "14 Jul 2027",
+      "end_date": "19 Jul 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLAECOMOscarFaber_Coding",
+      "name": "PSLAECOMOscarFaber - Coding",
+      "scheme": "PSLAECOMOscarFaber",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 340,
+      "end": 350,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "PSLAECOMOscarFaber_Specs"
+      ],
+      "start_date": "14 Jul 2027",
+      "end_date": "28 Jul 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "PSLAtkins_Coding",
+      "name": "PSLAtkins - Coding",
+      "scheme": "PSLAtkins",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 340,
+      "end": 350,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "PSLAtkins_Specs"
+      ],
+      "start_date": "14 Jul 2027",
+      "end_date": "28 Jul 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "MayGurney_UAT",
+      "name": "MayGurney - Coding",
+      "scheme": "MayGurney",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 341,
+      "end": 351,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "MayGurney_Testing"
+      ],
+      "start_date": "15 Jul 2027",
+      "end_date": "29 Jul 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLAvivaFPPS_UAT",
+      "name": "PSLAvivaFPPS - Coding",
+      "scheme": "PSLAvivaFPPS",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 341,
+      "end": 351,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLAvivaFPPS_Testing"
+      ],
+      "start_date": "15 Jul 2027",
+      "end_date": "29 Jul 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "MB_Testing",
+      "name": "MB - Coding",
+      "scheme": "MB",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 345,
+      "end": 348,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "MB_Coding"
+      ],
+      "start_date": "21 Jul 2027",
+      "end_date": "26 Jul 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "TUC_Specs",
+      "name": "TUC - Specs",
+      "scheme": "TUC",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 345,
+      "end": 350,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "21 Jul 2027",
+      "end_date": "28 Jul 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "XPSBramblesUK_Coding",
+      "name": "XPSBramblesUK - Coding",
+      "scheme": "XPSBramblesUK",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 345,
+      "end": 355,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "XPSBramblesUK_Specs"
+      ],
+      "start_date": "21 Jul 2027",
+      "end_date": "4 Aug 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLAECOMOscarFaber_Testing",
+      "name": "PSLAECOMOscarFaber - Coding",
+      "scheme": "PSLAECOMOscarFaber",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 350,
+      "end": 353,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLAECOMOscarFaber_Coding"
+      ],
+      "start_date": "28 Jul 2027",
+      "end_date": "2 Aug 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "PSLAvis_Specs",
+      "name": "PSLAvis - Specs",
+      "scheme": "PSLAvis",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 350,
+      "end": 355,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "28 Jul 2027",
+      "end_date": "4 Aug 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "TUC_Coding",
+      "name": "TUC - Coding",
+      "scheme": "TUC",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 350,
+      "end": 360,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "TUC_Specs"
+      ],
+      "start_date": "28 Jul 2027",
+      "end_date": "11 Aug 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "EvonikLGPT_UAT",
+      "name": "EvonikLGPT - Coding",
+      "scheme": "EvonikLGPT",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 351,
+      "end": 361,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "EvonikLGPT_Testing"
+      ],
+      "start_date": "29 Jul 2027",
+      "end_date": "12 Aug 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLAvivaASPS_UAT",
+      "name": "PSLAvivaASPS - Coding",
+      "scheme": "PSLAvivaASPS",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 351,
+      "end": 361,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLAvivaASPS_Testing"
+      ],
+      "start_date": "29 Jul 2027",
+      "end_date": "12 Aug 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "PSLAtkins_Testing",
+      "name": "PSLAtkins - Coding",
+      "scheme": "PSLAtkins",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 353,
+      "end": 356,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLAtkins_Coding"
+      ],
+      "start_date": "2 Aug 2027",
+      "end_date": "5 Aug 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "PSLAvis_Coding",
+      "name": "PSLAvis - Coding",
+      "scheme": "PSLAvis",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 355,
+      "end": 365,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "PSLAvis_Specs"
+      ],
+      "start_date": "4 Aug 2027",
+      "end_date": "18 Aug 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLJPS2015_Specs",
+      "name": "PSLJPS2015 - Specs",
+      "scheme": "PSLJPS2015",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 355,
+      "end": 360,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "4 Aug 2027",
+      "end_date": "11 Aug 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLJPS2015_Specs",
+      "name": "PSLJPS2015 - Specs",
+      "scheme": "PSLJPS2015",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 355,
+      "end": 360,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "4 Aug 2027",
+      "end_date": "11 Aug 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "XPSBramblesUK_Testing",
+      "name": "XPSBramblesUK - Coding",
+      "scheme": "XPSBramblesUK",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 356,
+      "end": 359,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "XPSBramblesUK_Coding"
+      ],
+      "start_date": "5 Aug 2027",
+      "end_date": "10 Aug 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLJPS2015_Coding",
+      "name": "PSLJPS2015 - Coding",
+      "scheme": "PSLJPS2015",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 360,
+      "end": 370,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "PSLJPS2015_Specs"
+      ],
+      "start_date": "11 Aug 2027",
+      "end_date": "25 Aug 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLJPS2015_Coding",
+      "name": "PSLJPS2015 - Coding",
+      "scheme": "PSLJPS2015",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 360,
+      "end": 370,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "PSLJPS2015_Specs"
+      ],
+      "start_date": "11 Aug 2027",
+      "end_date": "25 Aug 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLNTL_Specs",
+      "name": "PSLNTL - Specs",
+      "scheme": "PSLNTL",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 360,
+      "end": 365,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "11 Aug 2027",
+      "end_date": "18 Aug 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "TUC_Testing",
+      "name": "TUC - Coding",
+      "scheme": "TUC",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 360,
+      "end": 363,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "TUC_Coding"
+      ],
+      "start_date": "11 Aug 2027",
+      "end_date": "16 Aug 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "HBG_UAT",
+      "name": "HBG - Coding",
+      "scheme": "HBG",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 361,
+      "end": 371,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "HBG_Testing"
+      ],
+      "start_date": "12 Aug 2027",
+      "end_date": "26 Aug 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "XPSBramblesUK_UAT",
+      "name": "XPSBramblesUK - Coding",
+      "scheme": "XPSBramblesUK",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 361,
+      "end": 371,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "XPSBramblesUK_Testing"
+      ],
+      "start_date": "12 Aug 2027",
+      "end_date": "26 Aug 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "CBrewers_Specs",
+      "name": "CBrewers - Specs",
+      "scheme": "CBrewers",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 365,
+      "end": 370,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "18 Aug 2027",
+      "end_date": "25 Aug 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "EDoc_Coding",
+      "name": "EDoc - Coding",
+      "scheme": "EDoc",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 365,
+      "end": 375,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "EDoc_Specs"
+      ],
+      "start_date": "18 Aug 2027",
+      "end_date": "1 Sep 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLAvis_Testing",
+      "name": "PSLAvis - Coding",
+      "scheme": "PSLAvis",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 365,
+      "end": 368,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLAvis_Coding"
+      ],
+      "start_date": "18 Aug 2027",
+      "end_date": "23 Aug 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLNTL_Coding",
+      "name": "PSLNTL - Coding",
+      "scheme": "PSLNTL",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 365,
+      "end": 375,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "PSLNTL_Specs"
+      ],
+      "start_date": "18 Aug 2027",
+      "end_date": "1 Sep 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLJPS2015_Testing",
+      "name": "PSLJPS2015 - Coding",
+      "scheme": "PSLJPS2015",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 370,
+      "end": 373,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLJPS2015_Coding"
+      ],
+      "start_date": "25 Aug 2027",
+      "end_date": "30 Aug 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLJPS2015_Testing",
+      "name": "PSLJPS2015 - Coding",
+      "scheme": "PSLJPS2015",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 370,
+      "end": 373,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLJPS2015_Coding"
+      ],
+      "start_date": "25 Aug 2027",
+      "end_date": "30 Aug 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "XPSDelta_Specs",
+      "name": "XPSDelta - Specs",
+      "scheme": "XPSDelta",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 370,
+      "end": 375,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "25 Aug 2027",
+      "end_date": "1 Sep 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "PSA_UAT",
+      "name": "PSA - Coding",
+      "scheme": "PSA",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 371,
+      "end": 381,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "PSA_Testing"
+      ],
+      "start_date": "26 Aug 2027",
+      "end_date": "9 Sep 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "TUC_UAT",
+      "name": "TUC - Coding",
+      "scheme": "TUC",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 371,
+      "end": 381,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "TUC_Testing"
+      ],
+      "start_date": "26 Aug 2027",
+      "end_date": "9 Sep 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "EDoc_Testing",
+      "name": "EDoc - Coding",
+      "scheme": "EDoc",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 375,
+      "end": 378,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "EDoc_Coding"
+      ],
+      "start_date": "1 Sep 2027",
+      "end_date": "6 Sep 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLAvivaLandE_Specs",
+      "name": "PSLAvivaLandE - Specs",
+      "scheme": "PSLAvivaLandE",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 375,
+      "end": 380,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "1 Sep 2027",
+      "end_date": "8 Sep 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "St Ives_Coding",
+      "name": "St Ives - Coding",
+      "scheme": "St Ives",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 375,
+      "end": 385,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "St Ives_Specs"
+      ],
+      "start_date": "1 Sep 2027",
+      "end_date": "15 Sep 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLNTL_Testing",
+      "name": "PSLNTL - Coding",
+      "scheme": "PSLNTL",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 378,
+      "end": 381,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLNTL_Coding"
+      ],
+      "start_date": "6 Sep 2027",
+      "end_date": "9 Sep 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "RGriggs_Specs",
+      "name": "RGriggs - Specs",
+      "scheme": "RGriggs",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 380,
+      "end": 385,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "8 Sep 2027",
+      "end_date": "15 Sep 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "Lonza_UAT",
+      "name": "Lonza - Coding",
+      "scheme": "Lonza",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 381,
+      "end": 391,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "Lonza_Testing"
+      ],
+      "start_date": "9 Sep 2027",
+      "end_date": "23 Sep 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLNTL_UAT",
+      "name": "PSLNTL - Coding",
+      "scheme": "PSLNTL",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 381,
+      "end": 391,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "PSLNTL_Testing"
+      ],
+      "start_date": "9 Sep 2027",
+      "end_date": "23 Sep 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLLeonardoHelicopters_Specs",
+      "name": "PSLLeonardoHelicopters - Specs",
+      "scheme": "PSLLeonardoHelicopters",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 385,
+      "end": 390,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "15 Sep 2027",
+      "end_date": "22 Sep 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "RGriggs_Coding",
+      "name": "RGriggs - Coding",
+      "scheme": "RGriggs",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 385,
+      "end": 395,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "RGriggs_Specs"
+      ],
+      "start_date": "15 Sep 2027",
+      "end_date": "29 Sep 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "St Ives_Testing",
+      "name": "St Ives - Coding",
+      "scheme": "St Ives",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 385,
+      "end": 388,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "St Ives_Coding"
+      ],
+      "start_date": "15 Sep 2027",
+      "end_date": "20 Sep 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "PSLElectrolux_Specs",
+      "name": "PSLElectrolux - Specs",
+      "scheme": "PSLElectrolux",
+      "type": "spec",
+      "base_duration": 5,
+      "duration": 5,
+      "start": 390,
+      "end": 395,
+      "assigned_to": "Senior Analyst 1",
+      "depends_on": [],
+      "start_date": "22 Sep 2027",
+      "end_date": "29 Sep 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLLeonardoHelicopters_Coding",
+      "name": "PSLLeonardoHelicopters - Coding",
+      "scheme": "PSLLeonardoHelicopters",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 390,
+      "end": 400,
+      "assigned_to": "Senior Coder 1",
+      "depends_on": [
+        "PSLLeonardoHelicopters_Specs"
+      ],
+      "start_date": "22 Sep 2027",
+      "end_date": "6 Oct 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "PSLAECOMOscarFaber_UAT",
+      "name": "PSLAECOMOscarFaber - Coding",
+      "scheme": "PSLAECOMOscarFaber",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 391,
+      "end": 401,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "PSLAECOMOscarFaber_Testing"
+      ],
+      "start_date": "23 Sep 2027",
+      "end_date": "7 Oct 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "PSLAvis_UAT",
+      "name": "PSLAvis - Coding",
+      "scheme": "PSLAvis",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 391,
+      "end": 401,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLAvis_Testing"
+      ],
+      "start_date": "23 Sep 2027",
+      "end_date": "7 Oct 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "CBrewers_Coding",
+      "name": "CBrewers - Coding",
+      "scheme": "CBrewers",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 395,
+      "end": 405,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "CBrewers_Specs"
+      ],
+      "start_date": "29 Sep 2027",
+      "end_date": "13 Oct 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "PSLElectrolux_Coding",
+      "name": "PSLElectrolux - Coding",
+      "scheme": "PSLElectrolux",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 395,
+      "end": 405,
+      "assigned_to": "Senior Coder 3",
+      "depends_on": [
+        "PSLElectrolux_Specs"
+      ],
+      "start_date": "29 Sep 2027",
+      "end_date": "13 Oct 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "RGriggs_Testing",
+      "name": "RGriggs - Coding",
+      "scheme": "RGriggs",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 395,
+      "end": 398,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "RGriggs_Coding"
+      ],
+      "start_date": "29 Sep 2027",
+      "end_date": "4 Oct 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLLeonardoHelicopters_Testing",
+      "name": "PSLLeonardoHelicopters - Coding",
+      "scheme": "PSLLeonardoHelicopters",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 400,
+      "end": 403,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLLeonardoHelicopters_Coding"
+      ],
+      "start_date": "6 Oct 2027",
+      "end_date": "11 Oct 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "MB_UAT",
+      "name": "MB - Coding",
+      "scheme": "MB",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 401,
+      "end": 411,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "MB_Testing"
+      ],
+      "start_date": "7 Oct 2027",
+      "end_date": "21 Oct 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "RGriggs_UAT",
+      "name": "RGriggs - Coding",
+      "scheme": "RGriggs",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 401,
+      "end": 411,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "RGriggs_Testing"
+      ],
+      "start_date": "7 Oct 2027",
+      "end_date": "21 Oct 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "CBrewers_Testing",
+      "name": "CBrewers - Coding",
+      "scheme": "CBrewers",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 405,
+      "end": 408,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "CBrewers_Coding"
+      ],
+      "start_date": "13 Oct 2027",
+      "end_date": "18 Oct 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "JICase_Coding",
+      "name": "JICase - Coding",
+      "scheme": "JICase",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 405,
+      "end": 415,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "JICase_Specs"
+      ],
+      "start_date": "13 Oct 2027",
+      "end_date": "27 Oct 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLElectrolux_Testing",
+      "name": "PSLElectrolux - Coding",
+      "scheme": "PSLElectrolux",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 408,
+      "end": 411,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLElectrolux_Coding"
+      ],
+      "start_date": "18 Oct 2027",
+      "end_date": "21 Oct 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "CBrewers_UAT",
+      "name": "CBrewers - Coding",
+      "scheme": "CBrewers",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 411,
+      "end": 421,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "CBrewers_Testing"
+      ],
+      "start_date": "21 Oct 2027",
+      "end_date": "4 Nov 2027",
+      "color": "#4A9FD9"
+    },
+    {
+      "id": "St Ives_UAT",
+      "name": "St Ives - Coding",
+      "scheme": "St Ives",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 411,
+      "end": 421,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "St Ives_Testing"
+      ],
+      "start_date": "21 Oct 2027",
+      "end_date": "4 Nov 2027",
+      "color": "#795548"
+    },
+    {
+      "id": "JICase_Testing",
+      "name": "JICase - Coding",
+      "scheme": "JICase",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 415,
+      "end": 418,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "JICase_Coding"
+      ],
+      "start_date": "27 Oct 2027",
+      "end_date": "1 Nov 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Ryder_Coding",
+      "name": "Ryder - Coding",
+      "scheme": "Ryder",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 415,
+      "end": 425,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "Ryder_Specs"
+      ],
+      "start_date": "27 Oct 2027",
+      "end_date": "10 Nov 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "EDoc_UAT",
+      "name": "EDoc - Coding",
+      "scheme": "EDoc",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 421,
+      "end": 431,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "EDoc_Testing"
+      ],
+      "start_date": "4 Nov 2027",
+      "end_date": "18 Nov 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "PSLLeonardoHelicopters_UAT",
+      "name": "PSLLeonardoHelicopters - Coding",
+      "scheme": "PSLLeonardoHelicopters",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 421,
+      "end": 431,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLLeonardoHelicopters_Testing"
+      ],
+      "start_date": "4 Nov 2027",
+      "end_date": "18 Nov 2027",
+      "color": "#F44336"
+    },
+    {
+      "id": "CaravanClubUpgrade_Coding",
+      "name": "CaravanClubUpgrade - Coding",
+      "scheme": "CaravanClubUpgrade",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 425,
+      "end": 435,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "CaravanClubUpgrade_Specs"
+      ],
+      "start_date": "10 Nov 2027",
+      "end_date": "24 Nov 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "Ryder_Testing",
+      "name": "Ryder - Coding",
+      "scheme": "Ryder",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 425,
+      "end": 428,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "Ryder_Coding"
+      ],
+      "start_date": "10 Nov 2027",
+      "end_date": "15 Nov 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "JICase_UAT",
+      "name": "JICase - Coding",
+      "scheme": "JICase",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 431,
+      "end": 441,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "JICase_Testing"
+      ],
+      "start_date": "18 Nov 2027",
+      "end_date": "2 Dec 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLAtkins_UAT",
+      "name": "PSLAtkins - Coding",
+      "scheme": "PSLAtkins",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 431,
+      "end": 441,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLAtkins_Testing"
+      ],
+      "start_date": "18 Nov 2027",
+      "end_date": "2 Dec 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "CaravanClubUpgrade_Testing",
+      "name": "CaravanClubUpgrade - Coding",
+      "scheme": "CaravanClubUpgrade",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 435,
+      "end": 438,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "CaravanClubUpgrade_Coding"
+      ],
+      "start_date": "24 Nov 2027",
+      "end_date": "29 Nov 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLAvivaLandE_Coding",
+      "name": "PSLAvivaLandE - Coding",
+      "scheme": "PSLAvivaLandE",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 435,
+      "end": 445,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "PSLAvivaLandE_Specs"
+      ],
+      "start_date": "24 Nov 2027",
+      "end_date": "8 Dec 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "PSLJPS2015_UAT",
+      "name": "PSLJPS2015 - Coding",
+      "scheme": "PSLJPS2015",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 441,
+      "end": 451,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLJPS2015_Testing"
+      ],
+      "start_date": "2 Dec 2027",
+      "end_date": "16 Dec 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "PSLJPS2015_UAT",
+      "name": "PSLJPS2015 - Coding",
+      "scheme": "PSLJPS2015",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 441,
+      "end": 451,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLJPS2015_Testing"
+      ],
+      "start_date": "2 Dec 2027",
+      "end_date": "16 Dec 2027",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Ryder_UAT",
+      "name": "Ryder - Coding",
+      "scheme": "Ryder",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 441,
+      "end": 451,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "Ryder_Testing"
+      ],
+      "start_date": "2 Dec 2027",
+      "end_date": "16 Dec 2027",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "PSLAvivaLandE_Testing",
+      "name": "PSLAvivaLandE - Coding",
+      "scheme": "PSLAvivaLandE",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 445,
+      "end": 448,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "PSLAvivaLandE_Coding"
+      ],
+      "start_date": "8 Dec 2027",
+      "end_date": "13 Dec 2027",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "XPSPenguin_Coding",
+      "name": "XPSPenguin - Coding",
+      "scheme": "XPSPenguin",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 445,
+      "end": 455,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "XPSPenguin_Specs"
+      ],
+      "start_date": "8 Dec 2027",
+      "end_date": "22 Dec 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "AECOMMaunsell_UAT",
+      "name": "AECOMMaunsell - Coding",
+      "scheme": "AECOMMaunsell",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 451,
+      "end": 461,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "AECOMMaunsell_Testing"
+      ],
+      "start_date": "16 Dec 2027",
+      "end_date": "30 Dec 2027",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "CaravanClubUpgrade_UAT",
+      "name": "CaravanClubUpgrade - Coding",
+      "scheme": "CaravanClubUpgrade",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 451,
+      "end": 461,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "CaravanClubUpgrade_Testing"
+      ],
+      "start_date": "16 Dec 2027",
+      "end_date": "30 Dec 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "XPSDelta_Coding",
+      "name": "XPSDelta - Coding",
+      "scheme": "XPSDelta",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 455,
+      "end": 465,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "XPSDelta_Specs"
+      ],
+      "start_date": "22 Dec 2027",
+      "end_date": "5 Jan 2028",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "XPSPenguin_Testing",
+      "name": "XPSPenguin - Coding",
+      "scheme": "XPSPenguin",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 455,
+      "end": 458,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "XPSPenguin_Coding"
+      ],
+      "start_date": "22 Dec 2027",
+      "end_date": "27 Dec 2027",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "PSLAvivaLandE_UAT",
+      "name": "PSLAvivaLandE - Coding",
+      "scheme": "PSLAvivaLandE",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 461,
+      "end": 471,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "PSLAvivaLandE_Testing"
+      ],
+      "start_date": "30 Dec 2027",
+      "end_date": "13 Jan 2028",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "PSLElectrolux_UAT",
+      "name": "PSLElectrolux - Coding",
+      "scheme": "PSLElectrolux",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 461,
+      "end": 471,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "PSLElectrolux_Testing"
+      ],
+      "start_date": "30 Dec 2027",
+      "end_date": "13 Jan 2028",
+      "color": "#00BCD4"
+    },
+    {
+      "id": "AuditCommission_Coding",
+      "name": "AuditCommission - Coding",
+      "scheme": "AuditCommission",
+      "type": "calc_coding",
+      "base_duration": 10,
+      "duration": 10,
+      "start": 465,
+      "end": 475,
+      "assigned_to": "Senior Coder 2",
+      "depends_on": [
+        "AuditCommission_Specs"
+      ],
+      "start_date": "5 Jan 2028",
+      "end_date": "19 Jan 2028",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "XPSDelta_Testing",
+      "name": "XPSDelta - Coding",
+      "scheme": "XPSDelta",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 465,
+      "end": 468,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "XPSDelta_Coding"
+      ],
+      "start_date": "5 Jan 2028",
+      "end_date": "10 Jan 2028",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "BAA_UAT",
+      "name": "BAA - Coding",
+      "scheme": "BAA",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 471,
+      "end": 481,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "BAA_Testing"
+      ],
+      "start_date": "13 Jan 2028",
+      "end_date": "27 Jan 2028",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "XPSPenguin_UAT",
+      "name": "XPSPenguin - Coding",
+      "scheme": "XPSPenguin",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 471,
+      "end": 481,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "XPSPenguin_Testing"
+      ],
+      "start_date": "13 Jan 2028",
+      "end_date": "27 Jan 2028",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "AuditCommission_Testing",
+      "name": "AuditCommission - Coding",
+      "scheme": "AuditCommission",
+      "type": "calc_coding",
+      "base_duration": 3,
+      "duration": 3,
+      "start": 475,
+      "end": 478,
+      "assigned_to": "Analyst 1",
+      "depends_on": [
+        "AuditCommission_Coding"
+      ],
+      "start_date": "19 Jan 2028",
+      "end_date": "24 Jan 2028",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "AuditCommission_UAT",
+      "name": "AuditCommission - Coding",
+      "scheme": "AuditCommission",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 481,
+      "end": 491,
+      "assigned_to": "UAT Resource2",
+      "depends_on": [
+        "AuditCommission_Testing"
+      ],
+      "start_date": "27 Jan 2028",
+      "end_date": "10 Feb 2028",
+      "color": "#e07a2f"
+    },
+    {
+      "id": "XPSDelta_UAT",
+      "name": "XPSDelta - Coding",
+      "scheme": "XPSDelta",
+      "type": "calc_coding",
+      "base_duration": 5,
+      "duration": 10,
+      "start": 481,
+      "end": 491,
+      "assigned_to": "UAT Resource1",
+      "depends_on": [
+        "XPSDelta_Testing"
+      ],
+      "start_date": "27 Jan 2028",
+      "end_date": "10 Feb 2028",
+      "color": "#9C27B0"
     }
   ],
   "scheme_colors": {
-    "SchemeABC": "#4A9FD9",
-    "SchemeDEF": "#9C27B0"
+    "PSLLloydsRegister": "#4A9FD9",
+    "PSLRAC": "#9C27B0",
+    "XPSITW": "#4CAF50",
+    "BAA": "#e07a2f",
+    "CPL": "#F44336",
+    "CreditAgricole": "#00BCD4",
+    "PSLICRNew": "#E91E63",
+    "Kenwood": "#795548",
+    "PSLAECOMScottWilson": "#4A9FD9",
+    "Vector": "#9C27B0",
+    "XPSWPA": "#4CAF50",
+    "CNH": "#e07a2f",
+    "PSLParkerHannifin": "#F44336",
+    "EGL": "#00BCD4",
+    "TTLChiltern": "#E91E63",
+    "PSLAfton": "#795548",
+    "XPSMouchelBusiness": "#4A9FD9",
+    "PSLNTL_1999": "#9C27B0",
+    "Sandberg": "#4CAF50",
+    "MouchelSPS": "#e07a2f",
+    "Rexel": "#F44336",
+    "Statoil": "#00BCD4",
+    "XPSNuffield": "#E91E63",
+    "JohnGrooms": "#795548",
+    "PSLCBHillierParker": "#4A9FD9",
+    "XPSJPS2022": "#9C27B0",
+    "XPSPennon": "#4CAF50",
+    "AuditCommission": "#e07a2f",
+    "EvonikEPS": "#F44336",
+    "Headlam Group": "#00BCD4",
+    "Threei": "#E91E63",
+    "Houghton": "#795548",
+    "XPSRNIB": "#4A9FD9",
+    "Abaris": "#9C27B0",
+    "TimeWarner": "#4CAF50",
+    "XPSBramblesEnterprises": "#e07a2f",
+    "Comet": "#F44336",
+    "EDoc": "#00BCD4",
+    "Ingenico": "#E91E63",
+    "AccoladeWines": "#795548",
+    "Colas": "#4A9FD9",
+    "XPSMouchelSuperannuationFund": "#9C27B0",
+    "NACRO": "#4CAF50",
+    "PSLCompass": "#e07a2f",
+    "Walker Greenbank": "#F44336",
+    "VectorAeroNew": "#00BCD4",
+    "PSLLeonardoElectronics": "#E91E63",
+    "Aggregates": "#795548",
+    "PSLEcclesiasticals": "#4A9FD9",
+    "KierGroup": "#9C27B0",
+    "XPSInterpublic": "#4CAF50",
+    "CrestNicholson": "#e07a2f",
+    "PSLPrudential": "#F44336",
+    "Leisure Link": "#00BCD4",
+    "MayGurney": "#E91E63",
+    "VOCAUpgrade": "#795548",
+    "PSA": "#4A9FD9",
+    "GallifordTry": "#9C27B0",
+    "Quarriers": "#4CAF50",
+    "XPSPenguin": "#e07a2f",
+    "PSLYBS": "#F44336",
+    "Vector AeroSpace": "#00BCD4",
+    "JICase": "#E91E63",
+    "FIAT": "#795548",
+    "PSLJPS": "#4A9FD9",
+    "CBRE": "#9C27B0",
+    "Iveco": "#4CAF50",
+    "Mencap": "#e07a2f",
+    "Ronez": "#F44336",
+    "PSLMandG": "#00BCD4",
+    "XPSBramblesUK": "#E91E63",
+    "Biwater": "#795548",
+    "EvonikLGPT": "#4A9FD9",
+    "Ryder": "#9C27B0",
+    "PSLAvivaASPS": "#4CAF50",
+    "HBG": "#e07a2f",
+    "MB": "#F44336",
+    "AECOMMaunsell": "#00BCD4",
+    "PSLAvivaFPPS": "#E91E63",
+    "St Ives": "#795548",
+    "Lonza": "#4A9FD9",
+    "PSLAtkins": "#9C27B0",
+    "PSLAECOMOscarFaber": "#4CAF50",
+    "CaravanClubUpgrade": "#e07a2f",
+    "TUC": "#F44336",
+    "PSLAvis": "#00BCD4",
+    "PSLJPS2015": "#E91E63",
+    "PSLNTL": "#795548",
+    "CBrewers": "#4A9FD9",
+    "XPSDelta": "#9C27B0",
+    "PSLAvivaLandE": "#4CAF50",
+    "RGriggs": "#e07a2f",
+    "PSLLeonardoHelicopters": "#F44336",
+    "PSLElectrolux": "#00BCD4"
   },
   "utilization": {
-    "Developer 1": {
-      "days": 14,
-      "pct": 61,
+    "Senior Analyst 3": {
+      "days": 10,
+      "pct": 2,
+      "capacity": 0.5
+    },
+    "Senior Analyst 2": {
+      "days": 70,
+      "pct": 14,
       "capacity": 1.0
     },
-    "Developer 2": {
-      "days": 13,
-      "pct": 57,
+    "Senior Analyst 1": {
+      "days": 410,
+      "pct": 84,
       "capacity": 1.0
     },
-    "Tester": {
-      "days": 6,
-      "pct": 26,
+    "Senior Coder 1": {
+      "days": 250,
+      "pct": 51,
       "capacity": 1.0
     },
-    "UAT Resource": {
-      "days": 8,
-      "pct": 35,
+    "Senior Coder 3": {
+      "days": 260,
+      "pct": 53,
+      "capacity": 1.0
+    },
+    "Senior Coder 2": {
+      "days": 460,
+      "pct": 94,
+      "capacity": 1.0
+    },
+    "Analyst 1": {
+      "days": 291,
+      "pct": 59,
+      "capacity": 1.0
+    },
+    "UAT Resource1": {
+      "days": 490,
+      "pct": 100,
+      "capacity": 0.5
+    },
+    "UAT Resource2": {
+      "days": 480,
+      "pct": 98,
       "capacity": 0.5
     }
   },
@@ -392,6 +6748,382 @@ tbody tr:hover td { background: var(--surface2); }
     {
       "offset": 20,
       "label": "22 Apr"
+    },
+    {
+      "offset": 25,
+      "label": "29 Apr"
+    },
+    {
+      "offset": 30,
+      "label": "6 May"
+    },
+    {
+      "offset": 35,
+      "label": "13 May"
+    },
+    {
+      "offset": 40,
+      "label": "20 May"
+    },
+    {
+      "offset": 45,
+      "label": "27 May"
+    },
+    {
+      "offset": 50,
+      "label": "3 Jun"
+    },
+    {
+      "offset": 55,
+      "label": "10 Jun"
+    },
+    {
+      "offset": 60,
+      "label": "17 Jun"
+    },
+    {
+      "offset": 65,
+      "label": "24 Jun"
+    },
+    {
+      "offset": 70,
+      "label": "1 Jul"
+    },
+    {
+      "offset": 75,
+      "label": "8 Jul"
+    },
+    {
+      "offset": 80,
+      "label": "15 Jul"
+    },
+    {
+      "offset": 85,
+      "label": "22 Jul"
+    },
+    {
+      "offset": 90,
+      "label": "29 Jul"
+    },
+    {
+      "offset": 95,
+      "label": "5 Aug"
+    },
+    {
+      "offset": 100,
+      "label": "12 Aug"
+    },
+    {
+      "offset": 105,
+      "label": "19 Aug"
+    },
+    {
+      "offset": 110,
+      "label": "26 Aug"
+    },
+    {
+      "offset": 115,
+      "label": "2 Sep"
+    },
+    {
+      "offset": 120,
+      "label": "9 Sep"
+    },
+    {
+      "offset": 125,
+      "label": "16 Sep"
+    },
+    {
+      "offset": 130,
+      "label": "23 Sep"
+    },
+    {
+      "offset": 135,
+      "label": "30 Sep"
+    },
+    {
+      "offset": 140,
+      "label": "7 Oct"
+    },
+    {
+      "offset": 145,
+      "label": "14 Oct"
+    },
+    {
+      "offset": 150,
+      "label": "21 Oct"
+    },
+    {
+      "offset": 155,
+      "label": "28 Oct"
+    },
+    {
+      "offset": 160,
+      "label": "4 Nov"
+    },
+    {
+      "offset": 165,
+      "label": "11 Nov"
+    },
+    {
+      "offset": 170,
+      "label": "18 Nov"
+    },
+    {
+      "offset": 175,
+      "label": "25 Nov"
+    },
+    {
+      "offset": 180,
+      "label": "2 Dec"
+    },
+    {
+      "offset": 185,
+      "label": "9 Dec"
+    },
+    {
+      "offset": 190,
+      "label": "16 Dec"
+    },
+    {
+      "offset": 195,
+      "label": "23 Dec"
+    },
+    {
+      "offset": 200,
+      "label": "30 Dec"
+    },
+    {
+      "offset": 205,
+      "label": "6 Jan"
+    },
+    {
+      "offset": 210,
+      "label": "13 Jan"
+    },
+    {
+      "offset": 215,
+      "label": "20 Jan"
+    },
+    {
+      "offset": 220,
+      "label": "27 Jan"
+    },
+    {
+      "offset": 225,
+      "label": "3 Feb"
+    },
+    {
+      "offset": 230,
+      "label": "10 Feb"
+    },
+    {
+      "offset": 235,
+      "label": "17 Feb"
+    },
+    {
+      "offset": 240,
+      "label": "24 Feb"
+    },
+    {
+      "offset": 245,
+      "label": "3 Mar"
+    },
+    {
+      "offset": 250,
+      "label": "10 Mar"
+    },
+    {
+      "offset": 255,
+      "label": "17 Mar"
+    },
+    {
+      "offset": 260,
+      "label": "24 Mar"
+    },
+    {
+      "offset": 265,
+      "label": "31 Mar"
+    },
+    {
+      "offset": 270,
+      "label": "7 Apr"
+    },
+    {
+      "offset": 275,
+      "label": "14 Apr"
+    },
+    {
+      "offset": 280,
+      "label": "21 Apr"
+    },
+    {
+      "offset": 285,
+      "label": "28 Apr"
+    },
+    {
+      "offset": 290,
+      "label": "5 May"
+    },
+    {
+      "offset": 295,
+      "label": "12 May"
+    },
+    {
+      "offset": 300,
+      "label": "19 May"
+    },
+    {
+      "offset": 305,
+      "label": "26 May"
+    },
+    {
+      "offset": 310,
+      "label": "2 Jun"
+    },
+    {
+      "offset": 315,
+      "label": "9 Jun"
+    },
+    {
+      "offset": 320,
+      "label": "16 Jun"
+    },
+    {
+      "offset": 325,
+      "label": "23 Jun"
+    },
+    {
+      "offset": 330,
+      "label": "30 Jun"
+    },
+    {
+      "offset": 335,
+      "label": "7 Jul"
+    },
+    {
+      "offset": 340,
+      "label": "14 Jul"
+    },
+    {
+      "offset": 345,
+      "label": "21 Jul"
+    },
+    {
+      "offset": 350,
+      "label": "28 Jul"
+    },
+    {
+      "offset": 355,
+      "label": "4 Aug"
+    },
+    {
+      "offset": 360,
+      "label": "11 Aug"
+    },
+    {
+      "offset": 365,
+      "label": "18 Aug"
+    },
+    {
+      "offset": 370,
+      "label": "25 Aug"
+    },
+    {
+      "offset": 375,
+      "label": "1 Sep"
+    },
+    {
+      "offset": 380,
+      "label": "8 Sep"
+    },
+    {
+      "offset": 385,
+      "label": "15 Sep"
+    },
+    {
+      "offset": 390,
+      "label": "22 Sep"
+    },
+    {
+      "offset": 395,
+      "label": "29 Sep"
+    },
+    {
+      "offset": 400,
+      "label": "6 Oct"
+    },
+    {
+      "offset": 405,
+      "label": "13 Oct"
+    },
+    {
+      "offset": 410,
+      "label": "20 Oct"
+    },
+    {
+      "offset": 415,
+      "label": "27 Oct"
+    },
+    {
+      "offset": 420,
+      "label": "3 Nov"
+    },
+    {
+      "offset": 425,
+      "label": "10 Nov"
+    },
+    {
+      "offset": 430,
+      "label": "17 Nov"
+    },
+    {
+      "offset": 435,
+      "label": "24 Nov"
+    },
+    {
+      "offset": 440,
+      "label": "1 Dec"
+    },
+    {
+      "offset": 445,
+      "label": "8 Dec"
+    },
+    {
+      "offset": 450,
+      "label": "15 Dec"
+    },
+    {
+      "offset": 455,
+      "label": "22 Dec"
+    },
+    {
+      "offset": 460,
+      "label": "29 Dec"
+    },
+    {
+      "offset": 465,
+      "label": "5 Jan"
+    },
+    {
+      "offset": 470,
+      "label": "12 Jan"
+    },
+    {
+      "offset": 475,
+      "label": "19 Jan"
+    },
+    {
+      "offset": 480,
+      "label": "26 Jan"
+    },
+    {
+      "offset": 485,
+      "label": "2 Feb"
+    },
+    {
+      "offset": 490,
+      "label": "9 Feb"
     }
   ]
 };</script>
