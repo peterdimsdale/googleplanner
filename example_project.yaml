@@ -1,0 +1,155 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Pension Calc Development 2026 — Example Project
+#
+# Run:
+#   python3 planner.py example_project.yaml -v
+# ──────────────────────────────────────────────────────────────────────────────
+
+project:
+  name: "Pension Calc Development 2026"
+  start_date: "2026-03-24"
+
+# ── Team ──────────────────────────────────────────────────────────────────────
+team:
+  - name: Sarah
+    skills: [senior_dev, spec_review]
+    capacity: 1.0
+
+  - name: Marcus
+    skills: [senior_dev]
+    capacity: 1.0
+
+  - name: Priya
+    skills: [developer, spec_review]
+    capacity: 0.8
+
+  - name: Tom
+    skills: [testing]
+    capacity: 1.0
+
+  # UAT tester — admin team member, replace with real name when known
+  - name: UAT Resource
+    skills: [uat]
+    capacity: 0.5
+
+# ── Tasks ─────────────────────────────────────────────────────────────────────
+# duration: estimated working days
+# requires_skill must match a skill held by at least one team member
+# depends_on is a list of task IDs that must fully complete before this starts
+tasks:
+
+  # ─── SchemeABC ────────────────────────────────────────────────────────────
+  - id: abc_spec
+    name: "ABC - Spec Review"
+    scheme: SchemeABC
+    type: spec
+    duration: 3
+    requires_skill: spec_review
+
+  - id: abc_calc1
+    name: "ABC - Calc Coding Tranche 1"
+    scheme: SchemeABC
+    type: calc_coding
+    duration: 5
+    requires_skill: senior_dev
+    depends_on: [abc_spec]
+
+  - id: abc_calc2
+    name: "ABC - Calc Coding Tranche 2"
+    scheme: SchemeABC
+    type: calc_coding
+    duration: 4
+    requires_skill: senior_dev
+    depends_on: [abc_calc1]
+
+  - id: abc_test
+    name: "ABC - Testing"
+    scheme: SchemeABC
+    type: testing
+    duration: 3
+    requires_skill: testing
+    depends_on: [abc_calc2]
+
+  - id: abc_uat
+    name: "ABC - UAT"
+    scheme: SchemeABC
+    type: uat
+    duration: 2
+    requires_skill: uat
+    depends_on: [abc_test]
+
+  # ─── SchemeDEF ────────────────────────────────────────────────────────────
+  - id: def_spec
+    name: "DEF - Spec Review"
+    scheme: SchemeDEF
+    type: spec
+    duration: 2
+    requires_skill: spec_review
+
+  - id: def_calc1
+    name: "DEF - Calc Coding Tranche 1"
+    scheme: SchemeDEF
+    type: calc_coding
+    duration: 6
+    requires_skill: senior_dev
+    depends_on: [def_spec]
+
+  - id: def_calc2
+    name: "DEF - Calc Coding Tranche 2"
+    scheme: SchemeDEF
+    type: calc_coding
+    duration: 5
+    requires_skill: senior_dev
+    depends_on: [def_calc1]
+
+  - id: def_test
+    name: "DEF - Testing"
+    scheme: SchemeDEF
+    type: testing
+    duration: 3
+    requires_skill: testing
+    depends_on: [def_calc2]
+
+  - id: def_uat
+    name: "DEF - UAT"
+    scheme: SchemeDEF
+    type: uat
+    duration: 2
+    requires_skill: uat
+    depends_on: [def_test]
+
+  # ─── SchemeGHI ────────────────────────────────────────────────────────────
+  - id: ghi_spec
+    name: "GHI - Spec Review"
+    scheme: SchemeGHI
+    type: spec
+    duration: 4
+    requires_skill: spec_review
+
+  - id: ghi_calc
+    name: "GHI - Calc Coding"
+    scheme: SchemeGHI
+    type: calc_coding
+    duration: 8
+    requires_skill: developer
+    depends_on: [ghi_spec]
+
+  - id: ghi_test
+    name: "GHI - Testing"
+    scheme: SchemeGHI
+    type: testing
+    duration: 4
+    requires_skill: testing
+    depends_on: [ghi_calc]
+
+  - id: ghi_uat
+    name: "GHI - UAT"
+    scheme: SchemeGHI
+    type: uat
+    duration: 2
+    requires_skill: uat
+    depends_on: [ghi_test]
+
+# ── UAT Resources (admin team members — TBC per scheme) ───────────────────────
+# Add real names and adjust duration on UAT tasks when known.
+# Multiple entries here means the solver can parallelise UAT across schemes.

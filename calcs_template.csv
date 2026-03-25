@@ -1,0 +1,8 @@
+scheme,calc_name,duration_days,requires_skill
+# scheme name,calc display name,working days (whole number),leave blank for default
+
+SchemeABC,Retirement Pension Calc,5,
+SchemeABC,Transfer Value Calc,3,
+SchemeABC,GMP Revaluation,8,
+SchemeDEF,Retirement Pension Calc,4,
+SchemeDEF,CETV Calc,6,

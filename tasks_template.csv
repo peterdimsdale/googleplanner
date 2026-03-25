@@ -1,0 +1,11 @@
+id,name,scheme,type,duration,requires_skill,depends_on
+schemeabc_spec,SchemeABC - Spec Review,SchemeABC,spec,3,spec_review,
+schemeabc_transfer_value_calc,SchemeABC - Transfer Value Calc,SchemeABC,calc_coding,3,senior_dev,schemeabc_spec
+schemeabc_retirement_calc,SchemeABC - Retirement Calc,SchemeABC,calc_coding,5,senior_dev,schemeabc_spec
+schemeabc_gmp_revaluation,SchemeABC - GMP Revaluation,SchemeABC,calc_coding,8,senior_dev,schemeabc_spec
+schemeabc_test,SchemeABC - Testing,SchemeABC,testing,3,testing,schemeabc_transfer_value_calc;schemeabc_retirement_calc;schemeabc_gmp_revaluation
+schemeabc_uat,SchemeABC - UAT,SchemeABC,uat,2,uat,schemeabc_test
+schemedef_spec,SchemeDEF - Spec Review,SchemeDEF,spec,2,spec_review,
+schemedef_cetv_calc,SchemeDEF - CETV Calc,SchemeDEF,calc_coding,6,senior_dev,schemedef_spec
+schemedef_test,SchemeDEF - Testing,SchemeDEF,testing,3,testing,schemedef_cetv_calc
+schemedef_uat,SchemeDEF - UAT,SchemeDEF,uat,2,uat,schemedef_test
